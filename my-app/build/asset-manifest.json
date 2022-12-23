@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.440f4cbc.css",
+    "main.js": "/static/js/main.fbf6a361.js",
+    "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/amazingRacerVideo.mp4": "/static/media/amazingRacerVideo.9af297103bbd795170bd.mp4",
+    "static/media/safariVideo.mp4": "/static/media/safariVideo.f7353a0fad5673e9f2fd.mp4",
+    "static/media/perilousVideo.mp4": "/static/media/perilousVideo.50437ab0fc965f05ec4b.mp4",
+    "static/media/captainVideo.mp4": "/static/media/captainVideo.8a91af66dd9156078ceb.mp4",
+    "static/media/chaosVideo.mp4": "/static/media/chaosVideo.9c7b23e17627763368aa.mp4",
+    "static/media/gauntletVideo.mp4": "/static/media/gauntletVideo.7cf1ed3589e244187533.mp4",
+    "static/media/schoolVideo.mp4": "/static/media/schoolVideo.3ef891e52c9588bb1aa3.mp4",
+    "static/media/TTChocolates-Regular.otf": "/static/media/TTChocolates-Regular.176ca2264d21c62395a0.otf",
+    "static/media/logo250.png": "/static/media/logo250.d85f80fa9ef0ffaffdc4.png",
+    "static/media/cSharpLogoTrans.png": "/static/media/cSharpLogoTrans.487490a91c1e40d952d1.png",
+    "static/media/questionMark.png": "/static/media/questionMark.2ba31ee63616ec2df640.png",
+    "static/media/cPlusPlusLogo.png": "/static/media/cPlusPlusLogo.9faa803625bab284462e.png",
+    "index.html": "/index.html",
+    "main.440f4cbc.css.map": "/static/css/main.440f4cbc.css.map",
+    "main.fbf6a361.js.map": "/static/js/main.fbf6a361.js.map",
+    "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.440f4cbc.css",
+    "static/js/main.fbf6a361.js"
+  ]
+}
