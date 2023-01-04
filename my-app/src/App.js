@@ -114,8 +114,8 @@ function App() {
      <h3>Send Me A message!</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-         <label htmlFor="name">Your Name</label>
          <input
+         placeholder="Your Name"
            type="text"
            className="form-control"
            id="name"
@@ -125,8 +125,8 @@ function App() {
        </div>
 
        <div className="form-group">
-         <label htmlFor="position">Your Email</label>
          <input
+         placeholder="Your Email"
            type="email"
            className="form-control"
            id="position"
@@ -135,9 +135,9 @@ function App() {
          />
        </div>
 
-       <div className="form-group">
-         <label htmlFor="level">Your Message</label>
+       <div className="form-group">        
          <textarea
+         placeholder="Your Message"
            type="text"
            className="form-control"
            id="level"
