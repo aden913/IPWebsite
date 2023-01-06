@@ -16,24 +16,46 @@ html {
   background-color: #f8f8ff;
   scroll-behavior: smooth;
 }
-
+#resumeText{
+  text-align: center;
+  font-size: 1vw;}
 body{
  margin:0; 
 }
 a {
   color:inherit;
   text-decoration: none;
+  text-align: center;
+  margin:0;
+  padding: 0 40px 5px 40px;
 }
 a:link {
   color:white;
+  font-weight:bold;
 }
 a:visited {
   color:white;
+  font-weight:bold;
 }
 a:hover {
   color: #02c8f07b;
 }
 a:active {
+  color: #02c8f0;
+}
+#resumeLink{
+  padding:0;
+}
+#resumeLink:link{
+  color: #01133f;
+}
+#resumeLink:visited{
+  color: #01133f;
+}
+#resumeLink:hover{
+  color: #02c8f07b;
+}
+#resumeLink:active{
   color: #02c8f0;
 }
 #logo {
@@ -55,13 +77,18 @@ a:active {
   margin:0;
   font-size: 2vw;
   width:100%;
+  z-index:1001;
+}
+h3{
+  color:#01133f;
+  text-align: center;
+  font-size: 1.5vw;
 }
 li {
   display:inline-block;
   margin-left: 1vw;
   margin-bottom: 20px;
   margin-right: 1vw;
-  padding: 0 40px 5px 40px;
 }
 li:hover {
   background-image: linear-gradient(rgba(255, 255, 255, 0.263), rgba(255, 255, 255, 0.08));
@@ -119,7 +146,7 @@ li:hover {
 .cSharpProjectNames {
   margin:0;
   padding:0;
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-weight: bold;
   color:#02c8f0;
   width: 100%;
@@ -162,10 +189,7 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
-h3{
-  color:#01133f;
-  text-align: center;
-}
+
 label{
   color:#01133f;
   margin-right: 1vw;

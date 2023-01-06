@@ -154,6 +154,8 @@ function App() {
          />
        </div>
      </form>
+     <h3>My Resume</h3>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank">here</a></p>
    </div>
           </div>
 
