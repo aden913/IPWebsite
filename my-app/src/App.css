@@ -75,7 +75,7 @@ a:active {
   justify-content: center;
   align-items: center;
   margin:0;
-  font-size: 2vw;
+  font-size: 1.4vw;
   width:100%;
   z-index:1001;
 }
@@ -83,6 +83,7 @@ h3{
   color:#01133f;
   text-align: center;
   font-size: 1.5vw;
+  clear:both;
 }
 li {
   display:inline-block;
@@ -173,7 +174,14 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
-#otherDiv {
+
+#htmlDiv {
+  background-image: url("./images/htmlLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
   margin:0 auto;
   width: 80%;
   display: flex;
@@ -181,6 +189,40 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
+
+#phpDiv {
+  background-image: url("./images/phpLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#vbDiv{
+  background-image: url("./images/visualBasicLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#projectImage {
+  margin-bottom:2vw;
+}
+
 #contactDiv {
   margin:0 auto;
   width: 80%;
@@ -217,10 +259,11 @@ input[type="submit"] {
   color:white;
   font-weight: bold;
   border-radius: 12px;
-  clear:both;
+  float:right;
   margin-top:1vw;
   width:6vw;
   height:2vw;
+  
 }
 footer {
   background-color: #01133f;

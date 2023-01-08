@@ -13,6 +13,11 @@ import gauntletVideo from './images/gauntletVideo.mp4';
 import safariVideo from './images/safariVideo.mp4';
 import schoolVideo from './images/schoolVideo.mp4';
 
+import webpageScreenshot from './images/webpageScreenshot.PNG';
+import phpProjectScreenshot from './images/phpProjectScreenshot.PNG';
+import visualBasicScreenshot from './images/visualBasicScreenshot.PNG';
+
+
 import './images/TTChocolates-Regular.otf';
 import './App.css';
 
@@ -62,7 +67,9 @@ function App() {
           <li> <a href="#aboutDiv">About</a></li>
           <li><a href="#cSharpDiv">C#</a></li>
           <li><a href="#cPlusPlusDiv">C++</a></li>
-          <li><a href="#otherDiv">Other Languages</a></li>
+          <li><a href="#htmlDiv">HTML</a></li>
+          <li><a href="#phpDiv">PHP</a></li>
+          <li><a href="#vbDiv">VB</a></li>
           <li><a href="#contactDiv">Contact</a></li>
           </ul>
           <div id="aboutDiv">
@@ -100,12 +107,23 @@ function App() {
           <video className="videos"  autoPlay loop muted><source src={schoolVideo}></source></video>
           </div>
 
-
-          <div id="otherDiv">
-          <li className="cSharpProjectNames">Other Languages</li>
-          <p className="cSharpProjectText">I have delved into other languages as well such as MySQL, MongoDB, Visual Basic, Javascript, and Php. This Website is made with Html, Css, and React. </p>
+          <div id="htmlDiv">
+          <li className="cSharpProjectNames">Mardi Gras Webpage</li>
+          <p className="cSharpProjectText">This was a project I created whilst learning html and css. The project consists of multiple working links, styles, and other prominent html aspects.</p>
+          <img id="projectImage" src={webpageScreenshot}></img>
           </div>
 
+          <div id="phpDiv">
+          <li className="cSharpProjectNames">Workout Tracker</li>
+          <p className="cSharpProjectText">This php project is a mockup application for tracking a workout. It consists of a form as well as a backend database that will display the information inputted by the user.</p>
+          <img id="projectImage" src={phpProjectScreenshot}></img>
+          </div>
+
+          <div id="vbDiv">
+          <li className="cSharpProjectNames">Login Authenticator</li>
+          <p className="cSharpProjectText">This simple visual basic program emulates a user login. It requires specific logging requirements and also enforces them with tooltips.</p>
+          <img id="projectImage" src={visualBasicScreenshot}></img>
+          </div>
 
           <div id="contactDiv">
           <li className="cSharpProjectNames">Contact</li>
@@ -156,6 +174,8 @@ function App() {
      </form>
      <h3>My Resume</h3>
      <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank">here</a></p>
+     <h3>Project Downloads</h3>
+     <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank">here</a></p>
    </div>
           </div>
 
