@@ -221,6 +221,8 @@ li:hover {
 }
 #projectImage {
   margin-bottom:2vw;
+  max-width: 100%;
+  height: auto;
 }
 
 #contactDiv {
