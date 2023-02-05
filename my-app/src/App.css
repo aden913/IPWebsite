@@ -22,25 +22,25 @@ html {
 body{
  margin:0; 
 }
-a {
+nav a {
   color:inherit;
   text-decoration: none;
   text-align: center;
   margin:0;
   padding: 0 1vw 1vw 1vw;
 }
-a:link {
+nav a:link {
   color:white;
   font-weight:bold;
 }
-a:visited {
+nav a:visited {
   color:white;
   font-weight:bold;
 }
-a:hover {
+nav a:hover {
   color: #02c8f07b;
 }
-a:active {
+nav a:active {
   color: #02c8f0;
 }
 #resumeLink{
@@ -274,3 +274,30 @@ footer {
   height: 200px;
 }
 
+
+.webLinks{
+  color:inherit;
+  text-decoration: none;
+  text-align: center;
+  margin:0;
+  padding: .7vw 1vw .7vw 1vw;
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background-color: #01133f48;
+  border-radius: .5vw;
+}
+.webLinks:link {
+  color:#01133f;
+  font-weight:bold;
+}
+.webLinks:visited {
+  color:#01133f;
+  font-weight:bold;
+}
+.webLinks:hover {
+  color: #02c8f0;
+}
+.webLinks:active {
+  color: #02c8f0;
+}

@@ -2,7 +2,12 @@ import logo from './images/logo250.png';
 import questionMark from './images/questionMark.png';
 import React, { useState } from "react";
 
-//import cSharpLogo from './images/cSharpLogo.png';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 
 
 import amazingVideo from './images/amazingRacerVideo.mp4';
@@ -16,6 +21,8 @@ import schoolVideo from './images/schoolVideo.mp4';
 import webpageScreenshot from './images/webpageScreenshot.PNG';
 import phpProjectScreenshot from './images/phpProjectScreenshot.PNG';
 import visualBasicScreenshot from './images/visualBasicScreenshot.PNG';
+
+
 
 
 import './images/TTChocolates-Regular.otf';
@@ -63,6 +70,7 @@ function App() {
   return (
     <div className="App">
           <header id="logo"><img src={logo} alt="Logo"/></header>
+          <nav>
           <ul id="navbar">
           <li> <a href="#aboutDiv">About</a></li>
           <li><a href="#cSharpDiv">C#</a></li>
@@ -72,6 +80,7 @@ function App() {
           <li><a href="#vbDiv">VB</a></li>
           <li><a href="#contactDiv">Contact</a></li>
           </ul>
+          </nav>
           <div id="aboutDiv">
           <img src={questionMark} alt="question mark" id="questionMarkImg"/>
           
@@ -108,13 +117,22 @@ function App() {
           </div>
 
           <div id="htmlDiv">
-          <li className="cSharpProjectNames">Mardi Gras Webpage</li>
-          <p className="cSharpProjectText">This was a project I created whilst learning html and css. The project consists of multiple working links, styles, and other prominent html aspects.</p>
-          <img id="projectImage" src={webpageScreenshot}></img>
+            <li className="cSharpProjectNames">My Websites</li>
+             <a href="webpages/html/CoxCh5/index.html" className='webLinks'>First Webpage</a>
+             <a href="webpages/html/CoxCh6/index.html" className='webLinks'>Second Webpage</a>
+             <a href="webpages/html/CoxCh7/index.html" className='webLinks'>Third Webpage</a>
+             <a href="webpages/html/CoxCh13/index.html" className='webLinks'>Fourth Webpage</a>
+             <a href="webpages/html/CoxCh13CGIP/index.html" className='webLinks'>Fifth Webpage</a>
+          
+          <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.</p>
+          {/* <img id="projectImage" src={webpageScreenshot}></img> */}
           </div>
 
           <div id="phpDiv">
           <li className="cSharpProjectNames">Workout Tracker</li>
+
+          <a href="webpages/php/Project3/Project3.php" className='webLinks'>Workout Tracker</a>
+          
           <p className="cSharpProjectText">This php project is a mockup application for tracking a workout. It consists of a form as well as a backend database that will display the information inputted by the user.</p>
           <img id="projectImage" src={phpProjectScreenshot}></img>
           </div>

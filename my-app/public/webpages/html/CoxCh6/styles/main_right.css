@@ -1,0 +1,17 @@
+nav{
+	float:right;
+	color:white;
+}
+a:link, a:visited { 
+    color: white; 
+}
+a:hover, a:focus { 
+    color: orange;
+}
+section{
+		float:left;
+		background-color: white;
+}
+body{
+		background-color: black;
+}

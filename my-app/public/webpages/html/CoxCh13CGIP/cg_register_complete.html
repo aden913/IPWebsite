@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+    <title>CGIP Registration Complete</title>
+    <link rel="icon" type="image/x-icon" href="images/CGIP-favicon.ico">
+   <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet"  href="styles/cg_styles.css" type="text/css">
+   <link rel="stylesheet" href="styles/register.css" type="text/css">
+
+<script type="text/javascript">
+//<![CDATA[
+var decode = function ( text ) {
+    text = text.replace(/\+/g, " ");
+    text = text.replace(/%[a-fA-F0-9]{2}/g, 
+        function ( text ) {
+            return String.fromCharCode( "0x" + text.substr(1,2));
+        }
+    );
+    return text;
+}
+    
+var display_data = function () {
+    var query = location.search.replace("?", "");
+    if ( query == "" ) return;
+    
+    var fields = query.split("&");
+    
+    if ( fields.length == 0 ) {
+        document.write("<p>No data was submitted.</p>");
+    } else {
+        //document.write("<dl>");
+        var field_parts;
+        for ( var i in fields ) {
+            field_parts = fields[i].split("=");
+            field_parts[0] = decode( field_parts[0] );
+            field_parts[1] = decode( field_parts[1] );
+            document.write("<dt>" + field_parts[0] + "</dt>");
+            document.write("<dd>" + field_parts[1] + "</dd>");
+        }
+        //document.write("</dl>");
+    }
+}
+//]]>
+</script>
+</head>
+<body>
+   <header>
+      <img src="images/cg_logo.png" alt="Computer Graphics and Image Processing" id="logoimg">
+   </header>
+<nav>
+      <ul>
+         <li><a href="#">home page</a></li>
+         <li><a href="#">keynote address</a></li>
+         <li><a href="#">speakers</a></li>
+         <li><a href="#">general session</a></li>
+         <li><a href="#">programs</a></li>
+         <li><a href="#">workshops</a></li> 
+         <li><a href="#">travel info</a></li>
+         <li><a href="#">accommodations</a></li>
+         <li><a href="#">banquet</a></li>
+         <li><a href="#">family attractions</a></li>
+         <li><a href="#">tour Sante Fe</a></li>
+      </ul>         
+   </nav>
+<div id="content">
+    <h1>Conference Registration Complete</h1>
+    <p>Your registration has been submitted with the following
+    data:</p>
+    <dl>
+    	<dt class="headingsFormat">Name</dt>
+        <dd class="headingsFormat">Data Entered:</dd>
+    	<script type="text/javascript">display_data();</script>
+    </dl>
+    <p><a id="goHome" href="index.html">Return to Home Page</a></p>
+</div>
+</body>
+</html>

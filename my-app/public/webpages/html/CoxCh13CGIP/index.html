@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <meta charset="utf-8" />
+   <title>Cox CGIP Registration Form</title>
+   <link rel="icon" type="image/x-icon" href="images/CGIP-favicon.ico">
+   <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+   <link rel="stylesheet"  href="styles/cg_styles.css" type="text/css">
+   <link rel="stylesheet"  href="styles/style.css" type="text/css"> 
+
+</head>
+
+<body>
+   <header>
+      <img src="images/cg_logo.png" alt="Computer Graphics and Image Processing" id="logoimg">
+   </header>
+   <nav>
+      <ul>
+         <li><a href="#">home page</a></li>
+         <li><a href="#">keynote address</a></li>
+         <li><a href="#">speakers</a></li>
+         <li><a href="#">general session</a></li>
+         <li><a href="#">programs</a></li>
+         <li><a href="#">workshops</a></li> 
+         <li><a href="#">travel info</a></li>
+         <li><a href="#">accommodations</a></li>
+         <li><a href="#">banquet</a></li>
+         <li><a href="#">family attractions</a></li>
+         <li><a href="#">tour Sante Fe</a></li>
+      </ul>         
+   </nav>
+   <section>
+      <h1>Conference Registration Form</h1>
+      <p>Required Item (*)</p>
+      
+     
+	  <form action="cg_register_complete.html" method="get">
+				<label for="Fname">First Name*</label><input type="text" id="Fname" name="Fname" required> </input>
+				
+				<label for="Lname">Last Name*</label><input type="text" id="Lname" name="Lname" required> </input>
+				
+				<label for="Org">Company or University</label><input type="text" id="Org" name="Org"> </input>
+				
+				<label for="mail">E-mail*</label><input type="text" id="mail" name="mail" required> </input>
+				
+				<label for="memberNum">ACGIP Membership Number</label><input type="" id="memberNum" name="memberNum" placeholder="acgip-nnnnnn" pattern="(acgip)([\-]\d{6})" title="Please enter with the required format: acgip-nnnnnn"> </input>
+				
+				<label for="registration">Registration Category</label><select id="registration" name="registration"> 
+					<option selected>ACGIP Member $695</option>
+					<option>Non-Member $795</option>
+					<option>Student $310</option>
+					<option>Guest $35</option>
+				</select>
+				
+				
+				<fieldset class="noBord">
+					<legend>Credit Card*</legend>
+						<label for="AMEX" >AMEX</label><input type="radio" id="AMEX" name="cards" value="0"></input>
+						
+						
+						<label for="Discover">Discover</label><input type="radio" id="Discover" name="cards" value="1"></input>
+						
+						
+						<label for="VISA" >VISA</label><input type="radio" id="VISA" name="cards" value="2" checked></input>
+						
+						
+						<label for="MasterCard">MasterCard</label><input type="radio" id="MasterCard" name="cards" value="3"></input>
+						<img src="images/amex.png" alt="AMEX card">
+						<img src="images/discover.png" alt="Discover card">
+						<img src="images/visa.png" alt="VISA card">
+						<img src="images/master.png" alt="MasterCard">
+						
+						
+				</fieldset>
+				
+				
+				<fieldset class="noBord">
+					<legend>Expiration Month and Year</legend>
+						<label for="Month" class="noShow"></label><select id="Month" name="Month" >
+							<option selected>--Month--</option>
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>April</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+							
+						</select>
+						
+						<label for="Year" class="noShow"></label><select id="Year" name="Year" >
+							<option selected>--Year--</option>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+							<option>2027</option>
+							<option>2028</option>
+							<option>2029</option>
+							<option>2030</option>
+						
+						</select>
+				</fieldset>		
+						<label for="cardNum">Credit Card Number</label><input type="text" id="cardNum" name="cardNum" placeholder="9 digits" pattern="\d{9}" title="Please enter 9 digits"></input>
+						
+						<label for="CSC">CSC</label><input type="text" id="CSC" name="CSC" placeholder="3 digits" pattern="\d{3}" title="Please enter 3 digits"></input>
+				
+				
+				<label for="registerButton" class="noShow"></label><input type="submit" id="registerButton" name="registerButton" value="Register"></input>
+	  </form>
+          
+   </section>
+   
+   <aside>
+      <dl>
+         <dt>ACGIP Member ($695)</dt>
+         <dd>Eligible to attend all sessions and banquet</dd>
+         <dt>Non-Member ($795)</dt>
+         <dd>Eligible to attend all sessions and banquet</dd>
+         <dt>Student ($310)</dt>
+         <dd>Eligible to attend all sessions. <a href="#">Proof</a> of
+             student status required</dd>
+         <dt>Poster ($95)</dt>
+         <dd>Eligible to attend display hall and vendor stations</dd>
+         <dt>Guest ($35)</dt>
+         <dd>Eligible to attend banquet only</dd>
+      </dl>
+   </aside>
+
+   <footer>
+      <p>Association of Computer Graphics and Image Processing</p>
+	  <a href="../../../index.html">Return To Home Page</a>
+   </footer>
+</body>
+</html>

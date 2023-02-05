@@ -1,0 +1,100 @@
+/* Ch 5 Mardi Gras Solution */
+html {
+	background-image: url("../images/confetti.gif");	
+}
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 800px;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 0;
+}
+a {
+	font-weight: bold;
+	color: green;
+}
+a:link, a:visited { 
+    color: green; 
+}
+a:hover, a:focus { 
+    color: orange;
+}
+
+/* Header */
+header { 
+    background-image: -webkit-linear-gradient(45deg, white 0%, #9B3891 80%, black 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, #9B3891 80%, black 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, #9B3891 80%, black 100%);
+    background-image: linear-gradient(45deg, white 0%, #9B3891 80%, black 100%);
+    padding: 15px; 
+	padding-bottom:45px;
+    border-bottom: 2px solid black; 
+} 
+header img { 
+	float: left; 
+	padding-right: 15px;  
+} 
+header h2 {
+	font-size: 230%;
+}
+header h3 {
+	font-size: 125%;
+}
+
+/* section */
+section {
+		width: 70%;
+		float: right;
+	padding: 20px 25px 25px 25px;
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section h1:first-letter { 
+	font-size: 240%;
+}
+section h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+}
+section h3 {
+	font-size: 110%;
+	margin-bottom: .5em;
+}
+section p {
+	margin-bottom: .5em;
+}
+nav{
+		margin-top: 40px;
+		float: left;
+		width: 180px;
+}
+nav ul {
+		line-height: 150%;
+	margin-top: 0;
+}
+
+/* Footer */
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: 15px;
+    background-image: -webkit-linear-gradient(45deg, black 0%, #9B3891 20%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, #9B3891 20%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, #9B3891 20%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, #9B3891 20%, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
