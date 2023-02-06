@@ -131,7 +131,7 @@ function App() {
           <div id="phpDiv">
           <li className="cSharpProjectNames">Workout Tracker</li>
 
-          <a href="webpages/php/Project3/index.php" className='webLinks'>Workout Tracker</a>
+          <a href="phpTest.php" className='webLinks'>Workout Tracker</a>
           
           <p className="cSharpProjectText">This php project is a mockup application for tracking a workout. It consists of a form as well as a backend database that will display the information inputted by the user.</p>
           <img id="projectImage" src={phpProjectScreenshot}></img>
