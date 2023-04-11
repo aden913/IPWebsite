@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <div id="container"></div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react?dev",
+        "react-dom/client": "https://esm.sh/react-dom/client?dev"
+      }
+    }
+    </script>
+
+    <script type="text/babel" data-type="module">
+
+        import React, { StrictMode } from 'react';
+        import { createRoot } from 'react-dom/client';
+
+
+        let nextId = 0;
+        var num1 = 0;
+        var is10 = false;
+        var arrayOfColor = [];
+        const root = createRoot(document.getElementById('root'));
+
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////// start of counter
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+        class LightningCounter extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = {
+                    strikes: 0
+                };
+
+                this.timerTick = this.timerTick.bind(this);
+            }
+
+            timerTick() {
+                if (this.state.strikes == 10) {
+                    is10 = true;
+                }
+                else if (this.state.strikes == 0) {
+                    is10 = false;
+                }
+                if (is10 == false) {
+                    this.setState({ strikes: this.state.strikes + 1 });
+                }
+                else {
+                    this.setState({ strikes: this.state.strikes - 1 });
+                }
+            }
+
+            componentDidMount() {
+                setInterval(this.timerTick, 1000);
+            }
+
+            render() {
+                var counterStyle = {
+                    fontSize: 50
+                };
+                var count = this.state.strikes.toLocaleString();
+
+                function App() {
+                    if (num1 < count) {
+                        for (let i = num1; i < count; i++) {
+                            arrayOfColor = [...arrayOfColor, randColor()]
+                            num1++
+                        }
+                    }
+
+                    else if (num1 > count) {
+                        arrayOfColor.pop()
+                        num1--
+                    }
+
+                    return (
+                        <>
+                            {arrayOfColor}
+                        </>
+                    );
+                }
+
+                root.render(
+                    <StrictMode>
+                        <LightningCounterDisplay />
+                        <App />
+                    </StrictMode>
+                );
+
+                return (<>
+                    <h1 style={counterStyle}>{count}</h1>
+                </>
+                );
+            }
+        }
+
+
+
+
+
+        class LightningCounterDisplay extends React.Component {
+            render() {
+                var commonStyle = {
+                    margin: 0,
+                    padding: 0
+                };
+
+                var divStyle = {
+                    width: 250,
+                    textAlign: "center",
+                    padding: 40,
+                    fontFamily: "sans-serif",
+                    borderRadius: 10
+                };
+
+                var textStyles = {
+                    emphasis: {
+                        fontSize: 38,
+                        ...commonStyle
+                    },
+                    smallEmphasis: {
+                        ...commonStyle
+                    },
+                    small: {
+                        fontSize: 17,
+                        opacity: 0.5,
+                        ...commonStyle
+                    }
+                };
+
+                return (
+                    <div style={divStyle}>
+                        <LightningCounter />
+                    </div>
+                );
+            }
+        }
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////// end of counter
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+
+
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////// start of colors
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+
+        class Square extends React.Component {
+            render() {
+                var squareStyle = {
+                    height: 150,
+                    backgroundColor: this.props.color
+                };
+                return (
+                    <div style={squareStyle}>
+
+                    </div>
+                );
+            }
+        }
+
+        class Label extends React.Component {
+            render() {
+                var labelStyle = {
+                    fontFamily: "sans-serif",
+                    fontWeight: "bold",
+                    padding: 13,
+                    margin: 0
+                };
+                return (
+                    <p style={labelStyle}>{this.props.color}</p>
+                );
+            }
+        }
+        function randomNumber() {
+            var num = Math.floor(Math.random() * 16);
+            if (num == 10) {
+                num = "A";
+            }
+            else if (num == 11) {
+                num = "B";
+            }
+            else if (num == 12) {
+                num = "C";
+            }
+            else if (num == 13) {
+                num = "D";
+            }
+            else if (num == 14) {
+                num = "E";
+            }
+            else if (num == 15) {
+                num = "F";
+            }
+            return num;
+        }
+        function randomHex() {
+            var hex = "#";
+            hex = hex + randomNumber();
+            hex = hex + randomNumber();
+            hex = hex + randomNumber();
+            hex = hex + randomNumber();
+            hex = hex + randomNumber();
+            hex = hex + randomNumber();
+            return hex;
+        }
+
+        class Card extends React.Component {
+            render() {
+                var cardStyle = {
+                    height: 200,
+                    width: 150,
+                    padding: 0,
+                    backgroundColor: "#FFF",
+                    margin: "15px",
+                    boxShadow: "0px 0px 5px #666",
+                    display: "inline-block"
+                };
+                return (
+                    <div style={cardStyle}>
+                        <Square color={this.props.color} />
+                        <Label color={this.props.color} />
+                    </div>
+                );
+            }
+        }
+        function randColor() {
+            var colors = [randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex(), randomHex()];//["#393E41", "#E94F37", "#1C89BF", "#A1D363", "#11f", "#2b2", "#3d3", "#4c4", "#5e5", "#f66","#e77", "#c88", "#a99", "#c00", "#e10", "#d20", "#1b0", "#1f0", "#1a0", "#1b0"];
+            var ran = Math.floor(Math.random() * colors.length);
+            nextId++;
+            return <Card color={colors[ran]} key={nextId.toString()} />;
+
+        }
+
+
+
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////// end of colors
+        ////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+        ReactDOM.render(
+            <div>
+                <LightningCounterDisplay />
+            </div>,
+            document.querySelector("#container")
+        );
+
+    </script>
+</body>
+
+</html>

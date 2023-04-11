@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link type="text/css" href="styles(done)/project2Styles.css" rel="stylesheet">
+    <script>
+        let guess;
+        let arrayGuesses = [];
+        let arrayRandomNumbers = [];
+        let arrayMatches = [];
+        let correctAnswers = 0;
+        let cashPrize = 0.00;
+
+        function enterChecker(e)
+        {
+            if(e.keyCode == 13)
+            {
+                document.getElementById("inputButton").click();
+            }
+        }
+        function winningNums()
+        {
+            guess = document.getElementById("inputTextBox").value
+            parseInt(guess);
+            if(guess == "")
+            {
+                alert("Please enter something");
+            }
+            else if(isNaN(guess))
+            {
+                alert("Please enter a number");
+            }
+            else if(guess < 1)
+            {
+                alert("Please enter a number greater than 0");
+            }
+            else if(guess > 40)
+            {
+                alert("Please enter a number less than 40");
+            }
+            else
+            {
+                arrayGuesses.push(guess);
+            }
+            
+
+            if(arrayGuesses.length == 6)
+            {
+                document.getElementById("boxResult").innerHTML = "RESULTS";
+                while (arrayRandomNumbers.length <= 6)
+                {
+                   arrayRandomNumbers.push(Math.floor(Math.random() * 39 )+ 1);
+                }              
+            //COMPARE ARRAYS and populate the matches array
+            for(let i = 0;i < arrayGuesses.length;++i)
+                {
+                    let theGuess = arrayGuesses[i];
+                    for(let x = 0;x < arrayRandomNumbers.length;++x)
+                    {
+                        if(theGuess == arrayRandomNumbers[x])
+                        {
+                            correctAnswers = correctAnswers + 1;
+                            arrayMatches.push(arrayRandomNumbers[x]);
+                        }
+                    }
+                }
+
+            //OUTPUT THE ARRAYS
+                  for (let i = 0; i < arrayGuesses.length; ++i)
+            {
+                document.getElementById("guessesArray").innerHTML = document.getElementById("guessesArray").innerHTML + arrayGuesses[i] + "   ";
+            }
+            for (let i = 0; i < arrayRandomNumbers.length; ++i)
+            {
+                document.getElementById("randomArray").innerHTML = document.getElementById("randomArray").innerHTML + arrayRandomNumbers[i] + "   ";
+            } 
+            for (let i = 0; i < arrayMatches.length; ++i)
+            {
+                document.getElementById("matchesArray").innerHTML = document.getElementById("matchesArray").innerHTML + arrayGuesses[i] + "   ";
+            }
+            document.getElementById("cashout").innerHTML = document.getElementById("cashout").innerHTML + "You guessed " + correctAnswers + " numbers correctly!" + "<br />";
+            
+            //assign a prize according to how many were correctly guessed
+            switch(correctAnswers)
+            {
+            case 3:
+            cashPrize = 5.00;
+            break;
+            case 4:
+            cashPrize = 50.00;
+            break;
+            case 5:
+            cashPrize = 100.00;
+            break;
+            case 6:
+            cashPrize = 100000.00;
+            break;
+            }
+            document.getElementById("cashout").innerHTML = document.getElementById("cashout").innerHTML + "You won $" + cashPrize + ".00!!<br />";
+            arrayGuesses.length = 0;
+            arrayRandomNumbers.length = 0;
+            }
+        document.getElementById("inputTextBox").value = "";
+        document.getElementById("inputTextBox").focus();
+        
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1>Cash Grab!</h1>
+    <div id="ticketBackground">
+    <input type="text" id="inputTextBox" placeholder="1" onkeypress="enterChecker(event)">
+    <input type="button" value="submit"id="inputButton" onclick="winningNums()">
+    <div id="randomArrayDiv">
+        <fieldset>
+            <legend>Lucky Numbers!</legend>
+            <label id="randomArray"></label>
+        </fieldset>           
+    </div>
+    <div id="guessesArrayDiv">
+        <fieldset>
+            <legend>Your Numbers</legend>
+            <label id="guessesArray"></label>
+        </fieldset>
+    </div>
+    <div id="matchesDiv">
+        <fieldset>
+            <legend>Matches!</legend>
+            <label id="matchesArray"></label>
+        </fieldset>
+    </div>
+        <div id="cashoutDiv">
+            <fieldset>
+                <legend>Outcome!</legend>
+                <label id="cashout"></label>
+            </fieldset>           
+        </div>
+        <label id="hint">Submit 6 numbers to start*</label>
+    </div>
+    
+    <label id="boxResult">LOTTERY</label>
+
+</body>
+</html>

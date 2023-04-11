@@ -2,12 +2,7 @@ import logo from './images/logo250.png';
 import questionMark from './images/questionMark.png';
 import React, { useState } from "react";
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from 'react-router-dom';
+
 
 
 import amazingVideo from './images/amazingRacerVideo.mp4';
@@ -18,11 +13,14 @@ import gauntletVideo from './images/gauntletVideo.mp4';
 import safariVideo from './images/safariVideo.mp4';
 import schoolVideo from './images/schoolVideo.mp4';
 
-import webpageScreenshot from './images/webpageScreenshot.PNG';
-import phpProjectScreenshot from './images/phpProjectScreenshot.PNG';
+
 import visualBasicScreenshot from './images/visualBasicScreenshot.PNG';
+import vbCongrats from './images/visualBasicCongrats.PNG';
+import vb2Index from './images/vb2Index.PNG';
+import vb2Summary from './images/vb2Complete.PNG';
+import cPlusEx from './images/cPlusEx.PNG';
 
-
+import Collapsible from 'react-collapsible';
 
 
 import './images/TTChocolates-Regular.otf';
@@ -77,6 +75,7 @@ function App() {
           <li><a href="#cPlusPlusDiv">C++</a></li>
           <li><a href="#htmlDiv">HTML</a></li>
           <li><a href="#phpDiv">PHP</a></li>
+          <li><a href="#reactDiv">REACT</a></li>
           <li><a href="#vbDiv">VB</a></li>
           <li><a href="#contactDiv">Contact</a></li>
           </ul>
@@ -116,6 +115,56 @@ function App() {
           <video className="videos"  autoPlay loop muted><source src={schoolVideo}></source></video>
           </div>
 
+          <div id="cPlusPlusDiv">
+          <li className="cSharpProjectNames">Pointers</li>
+          <p className="cSharpProjectText">This excersize was a introduction into using pointers in c++. Pointers are very powerful and can manage how you send variables and other data using the computers memory.</p>
+          <Collapsible trigger="Number Sorter">
+          <img id="projectImage" src={cPlusEx} alt='a c plus plus project'></img>
+          </Collapsible>
+          <div id='codeBlock'>
+            
+            <Collapsible trigger="Code Snippet">
+<code>
+            vector&lt;int&gt; myVec;<br></br>
+	int number;<br></br>
+	vector&lt;int&gt;::iterator iter;<br></br>
+	int* Sorter(vector&lt;int&gt;* vector);<br></br>
+	for (int i = 0; i != 10; ++i)<br></br>
+	&#x7B;<br></br>
+		cout &lt;&lt; "Number " &lt;&lt; i + 1 &lt;&lt; ": ";<br></br>
+		cin 	&lt;&lt; number;<br></br>
+		myVec.push_back(number);<br></br>
+    &#x7D;<br></br>
+	Sorter(&myVec);<br></br>
+	for (iter = myVec.begin(); iter != myVec.end(); ++iter)<br></br>
+	&#x7B;<br></br>
+		cout &lt;&lt; *iter &lt;&lt; "  " ;<br></br>
+    &#x7D;<br></br>
+	return 0;<br></br>
+  &#x7D;<br></br>
+int* Sorter(vector&lt;int&gt;* vector)<br></br>
+&#x7B;<br></br>
+	for (int i = 0; i &lt; 9; i++)<br></br>
+	&#x7B;<br></br>
+		for (int i = 0; i &lt; 9; i++)<br></br>
+		&#x7B;<br></br>
+			int temp;<br></br>
+			int number;<br></br>
+			temp = (*vector)[i];<br></br>
+			if (temp 	&#xFE65; (*vector)[i + 1])<br></br>
+			&#x7B;<br></br>
+				(*vector)[i] = (*vector)[i + 1];<br></br>
+				(*vector)[i + 1] = temp;<br></br>
+        &#x7D;<br></br>
+      &#x7D;<br></br>
+      &#x7D; <br></br>
+	return 0;<br></br>
+  </code>
+  </Collapsible>
+              
+          </div>
+          </div>
+
           <div id="htmlDiv">
             <li className="cSharpProjectNames">My Websites</li>
              <a href="webpages/html/CoxCh5/index.html" className='webLinks'>First Webpage</a>
@@ -125,23 +174,58 @@ function App() {
              <a href="webpages/html/CoxCh13CGIP/index.html" className='webLinks'>Fifth Webpage</a>
           
           <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.</p>
-          {/* <img id="projectImage" src={webpageScreenshot}></img> */}
           </div>
 
-          <div id="phpDiv">
+          <div id="javascriptDiv">
           <li className="cSharpProjectNames">Workout Tracker</li>
-
-          <a href="webpages/php/Project3/index.php" className='webLinks'>Workout Tracker</a>
-          
-          <p className="cSharpProjectText">This php project is a mockup application for tracking a workout. It consists of a form as well as a backend database that will display the information inputted by the user.</p>
-          {/* <img id="projectImage" src={phpProjectScreenshot}></img> */}
+          <a href="webpages/javascript/Project3/index.php" className='webLinks'>Workout Tracker</a>
+          <p className="cSharpProjectText">This javascript project is a mockup application for tracking a workout. It consists of a form as well as a backend database that will display the information inputted by the user.</p>
           </div>
 
+          <div id="javascriptDiv">
+          <li className="cSharpProjectNames">Ballot Box</li>
+          <a href="webpages/javascript/Project3/index.php" className='webLinks'>Ballot Box</a>
+          <p className="cSharpProjectText">This javascript project takes 6 numbers </p>
+          </div>
+
+          <div id="reactDiv">
+          <li className="cSharpProjectNames">Random Swatches</li>
+
+          <a href="webpages/React/test.html" className='webLinks'>Random Swatches</a>
+          
+          <p className="cSharpProjectText"> This React app counts to ten, each increment adding a new randomly colored swatch, then upon reaching ten decrements and removes the swatches.</p>        
+          </div>
+
+          <div id="reactDiv">
+          <li className="cSharpProjectNames">Timed Swatches</li>
+          <a href="webpages/React/ReactTest1.html" className='webLinks'>Timed Swatches</a>                 
+          <p className="cSharpProjectText"> This React app has ten swatches that are randomized on a ten second timer</p>        
+          </div>
+
+          
           <div id="vbDiv">
           <li className="cSharpProjectNames">Login Authenticator</li>
           <p className="cSharpProjectText">This simple visual basic program emulates a user login. It requires specific logging requirements and also enforces them with tooltips.</p>
-          <img id="projectImage" src={visualBasicScreenshot}></img>
+          <Collapsible trigger="Login Page">
+          <img id="projectImage" src={visualBasicScreenshot} alt='a visual basic project'></img>
+          </Collapsible>
+          <Collapsible trigger="Congrats Page">
+          <img id="projectImage" src={vbCongrats} alt='a visual basic project'></img>
+          </Collapsible>
           </div>
+          
+          <div id="vbDiv">
+          <li className="cSharpProjectNames">Item Cart</li>
+          <p className="cSharpProjectText">This visual basic program takes orders and adds up the total of the ordered items and provides info based on what is entered.</p>
+          <Collapsible trigger="Order Page">
+          <img id="projectImage" src={vb2Index} alt='a visual basic project'></img>
+          </Collapsible>
+          <Collapsible trigger="Summary Page">
+          <img id="projectImage" src={vb2Summary} alt='a visual basic project'></img>
+          </Collapsible>
+          </div>
+
+
 
           <div id="contactDiv">
           <li className="cSharpProjectNames">Contact</li>
@@ -191,9 +275,9 @@ function App() {
        </div>
      </form>
      <h3>My Resume</h3>
-     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank">here</a></p>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
-     <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank">here</a></p>
+     <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
    </div>
           </div>
 

@@ -205,9 +205,8 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
-
-#vbDiv{
-  background-image: url("./images/visualBasicLogo.png");
+#reactDiv {
+  background-image: url("./images/reactLogo.png");
   background-size: 25vw;
   background-position: center;
   background-attachment: fixed, scroll;
@@ -220,6 +219,8 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
+
+
 #projectImage {
   margin-bottom:2vw;
   max-width: 100%;
@@ -300,4 +301,58 @@ footer {
 }
 .webLinks:active {
   color: #02c8f0;
+}
+
+#vbDiv{
+  background-image: url("./images/visualBasicLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Collapsible {
+  
+  display:flex;
+  
+}
+.Collapsible__trigger {
+  font-family: "TTChocolatesRegular";
+  src: url("./images/TTChocolates-Regular.otf");
+  background-color: #01133f48;
+  text-align: center;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+  padding:2px;
+  font-size: 1.2vw;
+  border-radius: 8px;
+}
+
+.Collapsible__contentInner {
+  width:60%;
+  margin: 0 auto;
+  float:left;
+
+}
+.Collapsible__contentOuter {
+  margin:0;
+  padding:0;
+  
+}
+
+
+#codeBlock {
+  font-family: "TTChocolatesRegular";
+  src: url("./images/TTChocolates-Regular.otf");
+  float: right;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2vw;
 }

@@ -1,0 +1,128 @@
+html
+{
+   
+   background-image: url("..//ballotBoxV3.png");
+   background-color:rgb(99, 199, 206);
+   background-repeat: no-repeat;
+   background-position: center top;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+
+}
+body
+{
+    font-family:cambria;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+#ticketBackground
+{
+background-image:linear-gradient(to bottom,rgb(248, 233, 164),rgb(207, 195, 138)) ;
+border-left: 4px solid rgb(231, 217, 153);
+border-right: 4px solid rgb(231, 217, 153);
+border-bottom: 4px solid rgb(231, 217, 153);
+border-top:none;
+text-align: center;
+}
+#cashoutDiv
+{
+    background-image:linear-gradient(to bottom,rgb(248, 233, 164),rgba(194, 182, 129, 0.664)) ;
+    min-width: 160px;
+    min-height: 90px;
+    display:flex;
+    width: 100px;
+    margin: 5px;
+    color:rgb(245, 100, 100);
+    
+}
+#guessesArrayDiv
+{
+    background-color: rgb(248, 233, 164);
+    min-width: 160px;
+    min-height: 90px;
+    display:flex;
+    width: 100px;
+    margin: 5px;
+    color:rgb(245, 100, 100);
+    border-bottom: 2px dashed rgb(245, 100, 100);}
+#randomArrayDiv
+{
+    background-color: rgb(248, 233, 164);
+    min-width: 160px;
+    min-height: 90px;
+    display:flex;
+    width: 100px;
+    margin: 5px;
+    color:rgb(245, 100, 100);
+    border-bottom: 2px dashed rgb(245, 100, 100);}
+#matchesDiv
+{
+    background-color: rgb(248, 233, 164);
+    min-width: 160px;
+    min-height: 90px;
+    display:flex;
+    width: 100px;
+    margin: 5px;
+    color:rgb(245, 100, 100);
+    border-bottom: 2px dashed rgb(245, 100, 100);}
+fieldset 
+{
+    border:none;
+}
+legend
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#inputTextBox 
+{
+    width:60px;
+    height: 40px;
+    background-color: rgb(248, 233, 164);
+    background-image: linear-gradient(to bottom right, rgb(248, 233, 164), rgba(245, 100, 100, 0.514));
+    border-color: rgba(209, 196, 135, 0.212);
+    color:rgb(245, 100, 100);
+    margin: 5px 15px 15px 5px;
+    font-size: 3em;
+}
+#inputButton
+{
+    background-color: rgb(248, 233, 164);
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.479), rgb(245, 100, 100) );
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+    margin: 5px 15px 15px 5px;
+    font-size: .70em;
+    color:rgb(248, 233, 164);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1
+{
+    
+    color:rgb(245, 100, 100);
+    background-color: rgb(248, 233, 164);
+    display:inline-block;
+    margin: 0;
+    width:170px;
+    border: 4px solid rgb(231, 217, 153);
+    border-bottom: 3px dashed rgb(245, 100, 100);
+}
+#boxResult 
+{
+    font-size: 4em;
+    margin-top: 315px;
+    color:red;
+    padding:0;
+}
+#hint
+{
+    font-style: italic;
+    color:rgb(248, 233, 164);
+    clear:both;
+    font-size: .9em;
+}
