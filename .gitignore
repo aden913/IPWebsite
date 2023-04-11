@@ -3,4 +3,3 @@ my-app/build/
 my-app/.module-cache
 *.log*
 *.vscode
-my-app/package-lock.json

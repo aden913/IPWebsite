@@ -1,0 +1,23 @@
+html {display: flex;
+    justify-content: center;}
+
+    #bodyDiv{
+        border-style: solid;
+        width:100%;
+        background-color: aqua;
+        
+    }
+    
+    label{display:inline-block;}
+    input{width:100%;
+        margin-top:.5vw;
+        margin-bottom: .5vw;
+        }
+    .autoWidth{width: auto;
+            }
+    input[type=submit]{clear:both;}
+    select{clear:both;}
+    .error{color:red;
+    display:inline;
+    }
+    h1{font-size: 1.2vw; display:inline;}

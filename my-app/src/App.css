@@ -205,6 +205,22 @@ li:hover {
   flex-direction: column;
   align-items: center;
 }
+
+#javascriptDiv {
+  background-image: url("./images/jsLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 #reactDiv {
   background-image: url("./images/reactLogo.png");
   background-size: 25vw;
@@ -220,6 +236,35 @@ li:hover {
   align-items: center;
 }
 
+#databaseDiv {
+  background-image: url("./images/databaseLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#appDiv {
+  background-image: url("./images/appLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 #projectImage {
   margin-bottom:2vw;
@@ -355,4 +400,8 @@ footer {
   padding: 15px;
   border-radius: 10px;
   font-size: 1.2vw;
+}
+
+.bigPicture {
+  height:1vw;
 }
