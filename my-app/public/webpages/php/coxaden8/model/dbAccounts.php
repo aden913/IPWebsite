@@ -1,7 +1,7 @@
 <?php
-$dsn = 'mysql:host=localhost;dbname=coxUSERS';
+$dsn = 'mysql:host=ipdb.c52eeidbab1q.us-east-2.rds.amazonaws.com;dbname=coxUSERS';
 $username = 'root';
-$password = '';
+$password = 'rootpassword';
 
 $db = new PDO($dsn, $username, $password);
 
