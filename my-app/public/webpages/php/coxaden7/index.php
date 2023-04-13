@@ -29,7 +29,8 @@ switch($action) {
             break;
 
     case 'view':
-        include('view/employee_view.php');
+        //include('view/employee_view.php');
+        include('test.php');
         break;
     case 'delete':
         include('model/delete_employee.php');
