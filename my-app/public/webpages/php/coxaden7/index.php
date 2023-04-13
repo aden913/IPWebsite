@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-   require('model/connect.php');
+   //require('model/connect.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action === NULL) {
@@ -29,7 +29,8 @@ switch($action) {
             break;
 
     case 'view':
-        include('view/employee_view.php');
+        //include('view/employee_view.php');
+        echo "hello";
         break;
     case 'delete':
         include('model/delete_employee.php');
