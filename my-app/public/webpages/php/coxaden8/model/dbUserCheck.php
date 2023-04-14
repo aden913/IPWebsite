@@ -12,7 +12,7 @@ function is_valid_admin_login($name, $pass){
     //echo $pass;
     //print_r($_POST);
 
-    $queryUser = 'SELECT account_type FROM users WHERE name = :name AND password = :pass';
+    $queryUser = 'SELECT account_type FROM users WHERE name = :name AND pass = :pass';
     $statement1 = $db->prepare($queryUser);
     $statement1->bindValue(':name', $strName);
     $statement1->bindValue(':pass', $strPass);
@@ -45,7 +45,7 @@ function is_normal_login($name, $pass){
     $strName = strval($name);
     $strPass = strval($hashPass);
 //if account exists
-    $queryUser = 'SELECT name, pass FROM users WHERE name = :name AND password = :pass';
+    $queryUser = 'SELECT name, pass FROM users WHERE name = :name AND pass = :pass';
     $statement1 = $db->prepare($queryUser);
     $statement1->bindValue(':name', $strName);
     $statement1->bindValue(':pass', $strPass);

@@ -1,1 +1,1 @@
-CREATE TABLE `coxusers`.`users` ( `userid` CHAR(10) NOT NULL , `name` VARCHAR(15) NOT NULL , `password` CHAR(10) NOT NULL , `account_type` VARCHAR(15) NOT NULL ) ENGINE = MyISAM;
+CREATE TABLE `coxusers`.`users` ( `userid` CHAR(10) NOT NULL , `name` VARCHAR(15) NOT NULL , `pass` CHAR(10) NOT NULL , `account_type` VARCHAR(15) NOT NULL ) ENGINE = MyISAM;
