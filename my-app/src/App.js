@@ -89,6 +89,26 @@ function App() {
           <li><a href="#contactDiv">Contact</a></li>
           </ul>
           </nav>
+
+          <nav>
+          <ul id="mobileNav">
+            
+          <li> <a href="#aboutDiv">About</a></li>
+          <li><a href="#cSharpDiv">C#</a></li>
+          <li><a href="#cPlusPlusDiv">C++</a></li>
+          <li><a href="#htmlDiv">HTML</a></li>
+          <li><a href="#phpDiv">PHP</a></li>
+          <li><a href="#javascriptDiv">JS</a></li>
+          <li><a href="#reactDiv">REACT</a></li>
+          <li><a href="#databaseDiv">DB</a></li>
+          <li><a href="#vbDiv">VB</a></li>
+          <li><a href="#appDiv">APPS</a></li>
+          <li><a href="#contactDiv">Contact</a></li>
+          
+          </ul>
+          </nav>
+
+
           <div id="aboutDiv">
           <img src={questionMark} alt="question mark" id="questionMarkImg"/>
           
@@ -127,11 +147,12 @@ function App() {
           <div id="cPlusPlusDiv">
           <li className="cSharpProjectNames">Pointers</li>
           <p className="cSharpProjectText">This excersize was a introduction into using pointers in c++. Pointers are very powerful and can manage how you send variables and other data using the computers memory.</p>
+          
           <Collapsible trigger="Number Sorter">
           <img id="projectImage" src={cPlusEx} alt='a c plus plus project'></img>
           </Collapsible>
-          <div id='codeBlock'>
-            
+
+          <div id='codeBlock'>           
             <Collapsible trigger="Code Snippet">
 <code>
             vector&lt;int&gt; myVec;<br></br>
@@ -169,8 +190,7 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
       &#x7D; <br></br>
 	return 0;<br></br>
   </code>
-  </Collapsible>
-              
+            </Collapsible>             
           </div>
           </div>
 
@@ -230,6 +250,9 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
           <li className="cSharpProjectNames">SQL Insert, Update, and Delete</li>
                         
           <p className="cSharpProjectText"> This database requirement recquired me to perform multiple inserts, updates, and deletes, in a MYSQL database.</p>      
+          
+          </div>
+          <div id='codeBlock'> 
           <Collapsible trigger="SQL statements">
            
             <code>
@@ -305,7 +328,9 @@ WHERE products.prod_id = orderitems.prod_id;<br></br>
 
           <div id="databaseDiv">
           <li className="cSharpProjectNames">SQL Create</li>                        
-          <p className="cSharpProjectText"> This SQL assignment is for creating databases. I learned how to create and manipulate a database as well as multiple tables and rows.</p>      
+          <p className="cSharpProjectText"> This SQL assignment is for creating databases. I learned how to create and manipulate a database as well as multiple tables and rows.</p> 
+          </div>
+          <div id='codeBlock'>      
           <Collapsible trigger="SQL statements">
            
             <code>
@@ -490,21 +515,26 @@ GROUP BY efname;<br></br>
           
           </Collapsible>
           </div>
+          
 
           <div id="vbDiv">
           <li className="cSharpProjectNames">Login Authenticator</li>
           <p className="cSharpProjectText">This simple visual basic program emulates a user login. It requires specific logging requirements and also enforces them with tooltips.</p>
+          </div>
+          <div id='codeBlock'> 
           <Collapsible trigger="Login Page">
           <img id="projectImage" src={visualBasicScreenshot} alt='a visual basic project'></img>
           </Collapsible>
           <Collapsible trigger="Congrats Page">
           <img id="projectImage" src={vbCongrats} alt='a visual basic project'></img>
           </Collapsible>
-          </div>
+         </div>
           
           <div id="vbDiv">
           <li className="cSharpProjectNames">Item Cart</li>
           <p className="cSharpProjectText">This visual basic program takes orders and adds up the total of the ordered items and provides info based on what is entered.</p>
+          </div>
+          <div id='codeBlock'> 
           <Collapsible trigger="Order Page">
           <img id="projectImage" src={vb2Index} alt='a visual basic project'></img>
           </Collapsible>
@@ -516,28 +546,33 @@ GROUP BY efname;<br></br>
           <div id="appDiv">
           <li className="cSharpProjectNames">Question Quest</li>
           <p className="cSharpProjectText">This app is intended to be a cross between trivia crack and quizlet. We intended for users to be able to create trivia and send them to people so that they may play them. The uses could be simple entertainment or even for teachers to send out a quiz to there students to study.</p>
+          </div>
+          <div id='codeBlock'>
           <Collapsible trigger="Login Page">
-          <img id="projectImage" src={appLogin} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={appLogin} alt='an app' className='bigPicture'></img>
           </Collapsible>
           <Collapsible trigger="Main Page">
-          <img id="projectImage" src={appMain} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={appMain} alt='an app' className='bigPicture'></img>
           </Collapsible>
           <Collapsible trigger="Create Page">
-          <img id="projectImage" src={appCreate} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={appCreate} alt='an app' className='bigPicture'></img>
           </Collapsible>
           </div>
 
           <div id="appDiv">
           <li className="cSharpProjectNames">Unmatched Helper</li>
+          
           <p className="cSharpProjectText">This app is meant to assist in playing a board game known as unmatched. It will assist in tracking your health as well as some characters passive abilities. It also contains a function to help decide random 2 on 2 teams.</p>
+          </div>
+          <div id='codeBlock'>
           <Collapsible trigger="Login Page">
-          <img id="projectImage" src={app2Main} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={app2Main} alt='an app' className='bigPicture'></img>
           </Collapsible>
           <Collapsible trigger="Main Page">
-          <img id="projectImage" src={app2Add} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={app2Add} alt='an app' className='bigPicture'></img>
           </Collapsible>
           <Collapsible trigger="Create Page">
-          <img id="projectImage" src={app2Play} alt='an app' class='bigPicture'></img>
+          <img id="projectImage" src={app2Play} alt='an app' className='bigPicture'></img>
           </Collapsible>
           </div>
 
@@ -548,7 +583,7 @@ GROUP BY efname;<br></br>
      <h3>Send Me A message!</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-       <label for='name' style='display: none;'></label>
+       <label htmlFor='name' ></label>
          <input        
           placeholder="Your Name"
            type="text"
@@ -560,7 +595,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">
-       <label for='position' style='display: none;'></label>
+       <label htmlFor='position' ></label>
          <input
          placeholder="Your Email"
            type="email"
@@ -572,7 +607,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">   
-       <label for='level' style='display: none;'></label>     
+       <label htmlFor='level' ></label>     
          <textarea
          placeholder="Your Message"
            type="text"
@@ -584,7 +619,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">
-        <label for='submit' style='display: none;'></label>
+        <label htmlFor='submit' ></label>
          <input
            type="submit"
            id="submit"
