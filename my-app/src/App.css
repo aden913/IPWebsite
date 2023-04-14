@@ -409,9 +409,13 @@ code {font-size: 1.2vw;}
 #mobileNav {display:none;}
 @media only screen and (max-width: 767px) {
 
+
   #questionMarkImg {display:none;}
+
   #aboutText {margin:2vw auto;
-              width: 50%;}
+              width: 50%;
+            font-size: 3vw;}
+
   #mobileNav {  display:inline-block;
                 position:fixed;
                 top:0;
@@ -427,80 +431,21 @@ code {font-size: 1.2vw;}
                 border-radius: 0px 0 5px 0;
                 padding: 0;
                 z-index:1001;
+                font-size: 2vw;
               }
   #mobileNav li {
-    margin-bottom: 8vw;
+    margin-bottom: 7vw;
     margin-top: 1.3vw;
 
               }
   #navbar{display:none;}
 
 
-  .navbarM {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navigation links */
-  .navbarM a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-.subnav {
-  float: left;
-  overflow: hidden;
-}
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: red;
-}
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: red;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: white;
-  text-decoration: none;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  background-color: #eee;
-  color: black;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: block;
-}
-
 #codeBlock {margin-left: 9vw;}
-
-
-
+.cSharpProjectText {font-size: 3vw;}
+.Collapsible__trigger {font-size:2vw;}
+.webLinks{font-size: 2vw;}
+#vbDiv{width:80%;}
+h3{font-size: 3vw;}
+#resumeText{font-size: 2vw;}
 }
