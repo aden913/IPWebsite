@@ -17,7 +17,7 @@ try {
         $error_message = "This department is already taken!";
     } else {
     $error_message = $e->getMessage();
-    echo $e;
+    echo $error_message;
     //include('dbError.php');
     exit();
     }
