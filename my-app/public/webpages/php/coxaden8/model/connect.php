@@ -6,7 +6,11 @@ $password = 'rootpassword';
 $db = new PDO($dsn, $username, $password);
 
 try {
-    $db = new PDO($dsn, $username, $password);
+    $options = [
+        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => true,
+        PDO::MYSQL_ATTR_SSL_CA => '/etc/ssl/certs/ca-certificates.crt'
+    ];
+    $db = new PDO($dsn, $username, $password, $options);
 } catch (PDOException $e) {
     if ($e->errorInfo[1] === 1062) {
         $error_message = "This department is already taken!";

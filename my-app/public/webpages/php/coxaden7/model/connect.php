@@ -7,7 +7,7 @@ $db = new PDO($dsn, $username, $password);
 
 try {
     $options = [
-        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => false,
+        PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => true,
         PDO::MYSQL_ATTR_SSL_CA => '/etc/ssl/certs/ca-certificates.crt'
     ];
     $db = new PDO($dsn, $username, $password, $options);
