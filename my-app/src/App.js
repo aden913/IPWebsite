@@ -635,9 +635,7 @@ GROUP BY efname;<br></br>
    </div>
           </div>
 
-          <footer>
-          
-
+          <footer>          
           </footer>
     </div>
   );

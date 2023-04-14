@@ -448,4 +448,7 @@ code {font-size: 1.2vw;}
 #vbDiv{width:80%;}
 h3{font-size: 3vw;}
 #resumeText{font-size: 2vw;}
+#submit{font-size: 2vw;
+  width:12vw;
+  height:4vw;}
 }
