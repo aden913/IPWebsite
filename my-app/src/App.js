@@ -583,7 +583,7 @@ GROUP BY efname;<br></br>
      <h3>Send Me A message!</h3>
      <form onSubmit={onSubmit}>
        <div className="form-group">
-       <label htmlFor='name' ></label>
+       <label htmlFor='name' >name</label>
          <input        
           placeholder="Your Name"
            type="text"
@@ -595,7 +595,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">
-       <label htmlFor='position' ></label>
+       <label htmlFor='position' >email</label>
          <input
          placeholder="Your Email"
            type="email"
@@ -607,7 +607,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">   
-       <label htmlFor='level' ></label>     
+       <label htmlFor='level' > message</label>     
          <textarea
          placeholder="Your Message"
            type="text"
@@ -619,7 +619,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">
-        <label htmlFor='submit' ></label>
+        <label htmlFor='submit' >submit button</label>
          <input
            type="submit"
            id="submit"
