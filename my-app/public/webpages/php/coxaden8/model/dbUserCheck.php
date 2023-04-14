@@ -45,7 +45,7 @@ function is_normal_login($name, $pass){
     $strName = strval($name);
     $strPass = strval($hashPass);
 //if account exists
-    $queryUser = 'SELECT name, pass FROM users WHERE name = :name AND pass = :pass';
+    $queryUser = 'SELECT name, pass FROM users WHERE name = :name AND password = :pass';
     $statement1 = $db->prepare($queryUser);
     $statement1->bindValue(':name', $strName);
     $statement1->bindValue(':pass', $strPass);
