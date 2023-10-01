@@ -453,3 +453,7 @@ h3{font-size: 3vw;}
   width:12vw;
   height:4vw;}
 }
+#hideMe
+{
+  display: none;
+}

@@ -204,7 +204,8 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
             <br></br>
             <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
             <a href="http://rwd-examples.inquisitiveprogramming.com/ch9/CoxAdenCh9/index.html" className='webLinks'>Responsive Design Example</a>
-          
+          <br></br>
+          <a href="webpages/html/poems/index.html" className='webLinks'>Poems</a>
           <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.<br></br> There is also a simle example using several bootstrap options as well as another simple example for responsive design to manage mobile devices.</p>
           </div>
 
@@ -619,7 +620,7 @@ GROUP BY efname;<br></br>
        </div>
 
        <div className="form-group">
-        <label htmlFor='submit' >submit button</label>
+        <label id="hideMe" htmlFor='submit' >submit button</label>
          <input
            type="submit"
            id="submit"
