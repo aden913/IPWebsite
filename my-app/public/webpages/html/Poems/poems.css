@@ -19,7 +19,7 @@ a {
     color:#f7c706;
   }
 
-.poemDivAden, .poemDivNathan, .poemDivJosue
+.poemDivAden, .poemDivNathan, .poemDivJosue, .poemDivSam, .poemDivBella
 {
     margin:0 auto;
     display:flex;
@@ -42,25 +42,20 @@ a {
     background-color: rgb(228, 196, 255);
 }
 
-.poemDivOther3
+.poemDivSam
 {
-    margin:0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: center;
     background-color: rgb(196, 255, 204);
-    padding:5%;
-    border-radius: 15px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 15%; 
+}
+.poemDivBella
+{
+    background-color: rgb(255, 196, 250);
 }
 .navDiv
 {
     display: flex;
     flex-direction: row;
 }
-#aden, #Josue, #Nathan
+#aden, #Josue, #Nathan, #Sam, #Bella
 {
     display: flex;
     align-items:center;
@@ -68,6 +63,16 @@ a {
     flex-direction:column;
     overflow:visible;
 }
+
+#adensPoems, #nathansPoems, #josuesPoems, #samsPoems, #bellasPoems
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 
 #Nathan li {
     background-color: rgb(255, 196, 196);
@@ -81,11 +86,17 @@ a {
 #Josue a {
     color:rgb(103, 11, 184);
 }
-#otherPerson3 li {
+#Sam li {
     background-color: rgb(196, 255, 204);
 }
-#otherPerson3 a {
+#Sam a {
     color:rgb(11, 184, 66);
+}
+#Bella li {
+    background-color:  rgb(255, 196, 250);
+}
+#Bella a {
+    color:rgb(184, 11, 132);
 }
 h1{
     text-align: center;
@@ -93,19 +104,12 @@ h1{
 }
 h2{
     text-decoration: underline;
+    margin-left: 20px;
 }
 aside{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#adensPoems, #nathansPoems, #josuesPoems
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
 }
 
 #buttonDiv {
@@ -117,5 +121,5 @@ aside{
     border-radius: 10px;
     background-color: rgb(100, 149, 237);
     color:white;
-    margin-top: 100%;
+    margin-top: 9vw;
 }
