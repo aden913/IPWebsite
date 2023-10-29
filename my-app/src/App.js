@@ -207,6 +207,7 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
           <br></br>
           {/* This is the poems website for summit */}
           <a href="webpages/html/Poems/index.html" className='webLinks'>Poems</a>
+
           <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.<br></br> There is also a simle example using several bootstrap options as well as another simple example for responsive design to manage mobile devices.</p>
           </div>
 
