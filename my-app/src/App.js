@@ -632,7 +632,7 @@ GROUP BY efname;<br></br>
        </div>
      </form>
      <h3>My Resume</h3>
-     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank" rel="noreferrer">here</a></p>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1uivQIP0ASm1kRF-ccZMQlQjDagEidgSh/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
      <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
    </div>
