@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 
 
-
 import amazingVideo from './images/amazingRacerVideo.mp4';
 import chaosVideo from './images/chaosVideo.mp4';
 import perilousVideo from './images/perilousVideo.mp4';
@@ -33,44 +32,8 @@ import './images/TTChocolates-Regular.otf';
 import './App.css';
 
 
-
 function App() {
   
-  const [form, setForm] = useState({
-    name: "",
-    position: "",
-    level: "",
-  });
-
-  function updateForm(value) {
-    return setForm((prev) => {
-      return { ...prev, ...value };
-    });
-  }
-  
-  // This function will handle the submission.
-  async function onSubmit(e) {
-    e.preventDefault();
-  
-    // When a post request is sent to the create url, we'll add a new record to the database.
-    const newPerson = { ...form };
-  
-    await fetch("https://inquisitiveprogramming.com/api/record/add", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newPerson),
-    })
-    .catch(error => {
-      window.alert(error);
-      return;
-    });
-  
-    setForm({ name: "", position: "", level: "" });
- 
-  }
-
   return (
     <div className="App">
           <header id="logo"><img src={logo} alt="Logo"/></header>
@@ -583,54 +546,29 @@ GROUP BY efname;<br></br>
           <li className="cSharpProjectNames">Contact</li>
           <div>
 
-     <h3>Send Me A message!</h3>
-     <form onSubmit={onSubmit}>
-       <div className="form-group">
-       <label htmlFor='name' >name</label>
-         <input        
-          placeholder="Your Name"
-           type="text"
-           className="form-control"
-           id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
-         />
-       </div>
+          <h3>Send Me A message!</h3>
 
-       <div className="form-group">
-       <label htmlFor='position' >email</label>
-         <input
-         placeholder="Your Email"
-           type="email"
-           className="form-control"
-           id="position"
-           value={form.position}
-           onChange={(e) => updateForm({ position: e.target.value })}
-         />
-       </div>
+<form action="/send-email" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required></input>
+    </div>
 
-       <div className="form-group">   
-       <label htmlFor='level' > message</label>     
-         <textarea
-         placeholder="Your Message"
-           type="text"
-           className="form-control"
-           id="level"
-           value={form.level}
-           onChange={(e) => updateForm({ level: e.target.value })}
-         />
-       </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required></input>
+    </div>
 
-       <div className="form-group">
-        <label id="hideMe" htmlFor='submit' >submit button</label>
-         <input
-           type="submit"
-           id="submit"
-           value="Send"
-           className="btn btn-primary"
-         />
-       </div>
-     </form>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Send"></input>
+    </div>
+</form>
+
      <h3>My Resume</h3>
      <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1uivQIP0ASm1kRF-ccZMQlQjDagEidgSh/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
