@@ -547,27 +547,7 @@ GROUP BY efname;<br></br>
           <div>
 
           <h3>Send Me A message!</h3>
-
-<form action="/send-email" method="post">
-    <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required></input>
-    </div>
-
-    <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required></input>
-    </div>
-
-    <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-    </div>
-
-    <div>
-        <input type="submit" value="Send"></input>
-    </div>
-</form>
+<p>Email me at inquisitiveprogramming@gmail.com</p>
 
      <h3>My Resume</h3>
      <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1uivQIP0ASm1kRF-ccZMQlQjDagEidgSh/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
