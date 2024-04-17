@@ -550,7 +550,7 @@ GROUP BY efname;<br></br>
 <p>Email me at inquisitiveprogramming@gmail.com</p>
 
      <h3>My Resume</h3>
-     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1uivQIP0ASm1kRF-ccZMQlQjDagEidgSh/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1Z4Im9N_sbnYM5g4_JK9CPt5EYXGeJm7i/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
      <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
    </div>
