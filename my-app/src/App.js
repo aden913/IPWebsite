@@ -170,6 +170,8 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
           <br></br>
           {/* This is the poems website for summit */}
           <a href="webpages/html/Poems/index.html" className='webLinks'>Poems</a>
+          <a href="MeganAlmon.com" className='webLinks'>MeganAlmon.com</a>
+
 
           <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.<br></br> There is also a simle example using several bootstrap options as well as another simple example for responsive design to manage mobile devices.</p>
           </div>
@@ -550,7 +552,7 @@ GROUP BY efname;<br></br>
 <p>Email me at inquisitiveprogramming@gmail.com</p>
 
      <h3>My Resume</h3>
-     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/1Z4Im9N_sbnYM5g4_JK9CPt5EYXGeJm7i/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/17T7PjFmNozJpgyTO5KPPqNf8lvcz9pBH/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
      <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
    </div>
