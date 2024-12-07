@@ -302,8 +302,110 @@ footer {
   color: #02c8f0;
 }
 
+#vbDiv{
+  background-image: url("./images/visualBasicLogo.png");
+  background-size: 25vw;
+  background-position: center;
+  background-attachment: fixed, scroll;
+  background-repeat: no-repeat;
+
+  margin:0 auto;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Collapsible {
+  
+  display:flex;
+  
+}
+.Collapsible__trigger {
+  font-family: "TTChocolatesRegular";
+  src: url("./images/TTChocolates-Regular.otf");
+  background-color: #01133f48;
+  text-align: center;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
+  padding:2px;
+  font-size: 1.2vw;
+  border-radius: 8px;
+  
+}
+
+.Collapsible__contentInner {
+  width:60%;
+  margin: 0 auto;
+  float:left;
+
+}
+.Collapsible__contentOuter {
+  margin:0;
+  padding:0;
+}
+
+
+#codeBlock {
+  font-family: "TTChocolatesRegular";
+  src: url("./images/TTChocolates-Regular.otf");
+  float: right;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2vw;
+}
+code {font-size: 1.2vw;}
+.bigPicture {
+  height:1vw;
+}
+#mobileNav {display:none;}
 @media only screen and (max-width: 767px) {
 
 
-  
+  #questionMarkImg {display:none;}
+
+  #aboutText {margin:2vw auto;
+              width: 50%;
+            font-size: 3vw;}
+
+  #mobileNav {  display:inline-block;
+                position:fixed;
+                top:0;
+                background-color: #01133f;
+                color:white;
+                list-style: none;
+                font-family: "TTChocolatesRegular";
+                height: 100%;
+                display:flex;                               
+                flex-direction: column;
+                margin:0;               
+                font-size: 1.4vw;
+                border-radius: 0px 0 5px 0;
+                padding: 0;
+                z-index:1001;
+                font-size: 2vw;
+              }
+  #mobileNav li {
+    margin-bottom: 7vw;
+    margin-top: 1.3vw;
+
+              }
+  #navbar{display:none;}
+
+
+#codeBlock {margin-left: 9vw;}
+.cSharpProjectText {font-size: 3vw;}
+.Collapsible__trigger {font-size:2vw;}
+.webLinks{font-size: 2vw;}
+#vbDiv{width:80%;}
+h3{font-size: 3vw;}
+#resumeText{font-size: 2vw;}
+#submit{font-size: 2vw;
+  width:12vw;
+  height:4vw;}
+}
+#hideMe
+{
+  display: none;
 }

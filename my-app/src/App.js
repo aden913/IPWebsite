@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 
 
-
 import amazingVideo from './images/amazingRacerVideo.mp4';
 import chaosVideo from './images/chaosVideo.mp4';
 import perilousVideo from './images/perilousVideo.mp4';
@@ -33,44 +32,8 @@ import './images/TTChocolates-Regular.otf';
 import './App.css';
 
 
-
 function App() {
   
-  const [form, setForm] = useState({
-    name: "",
-    position: "",
-    level: "",
-  });
-
-  function updateForm(value) {
-    return setForm((prev) => {
-      return { ...prev, ...value };
-    });
-  }
-  
-  // This function will handle the submission.
-  async function onSubmit(e) {
-    e.preventDefault();
-  
-    // When a post request is sent to the create url, we'll add a new record to the database.
-    const newPerson = { ...form };
-  
-    await fetch("https://inquisitiveprogramming.com/api/record/add", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(newPerson),
-    })
-    .catch(error => {
-      window.alert(error);
-      return;
-    });
-  
-    setForm({ name: "", position: "", level: "" });
- 
-  }
-
   return (
     <div className="App">
           <header id="logo"><img src={logo} alt="Logo"/></header>
@@ -204,7 +167,12 @@ int* Sorter(vector&lt;int&gt;* vector)<br></br>
             <br></br>
             <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
             <a href="http://rwd-examples.inquisitiveprogramming.com/ch9/CoxAdenCh9/index.html" className='webLinks'>Responsive Design Example</a>
-          
+          <br></br>
+          {/* This is the poems website for summit */}
+          <a href="webpages/html/Poems/index.html" className='webLinks'>Poems</a>
+          <a href="MeganAlmon.com" className='webLinks'>MeganAlmon.com</a>
+
+
           <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.<br></br> There is also a simle example using several bootstrap options as well as another simple example for responsive design to manage mobile devices.</p>
           </div>
 
@@ -580,56 +548,11 @@ GROUP BY efname;<br></br>
           <li className="cSharpProjectNames">Contact</li>
           <div>
 
-     <h3>Send Me A message!</h3>
-     <form onSubmit={onSubmit}>
-       <div className="form-group">
-       <label htmlFor='name' >name</label>
-         <input        
-          placeholder="Your Name"
-           type="text"
-           className="form-control"
-           id="name"
-           value={form.name}
-           onChange={(e) => updateForm({ name: e.target.value })}
-         />
-       </div>
+          <h3>Send Me A message!</h3>
+<p>Email me at inquisitiveprogramming@gmail.com</p>
 
-       <div className="form-group">
-       <label htmlFor='position' >email</label>
-         <input
-         placeholder="Your Email"
-           type="email"
-           className="form-control"
-           id="position"
-           value={form.position}
-           onChange={(e) => updateForm({ position: e.target.value })}
-         />
-       </div>
-
-       <div className="form-group">   
-       <label htmlFor='level' > message</label>     
-         <textarea
-         placeholder="Your Message"
-           type="text"
-           className="form-control"
-           id="level"
-           value={form.level}
-           onChange={(e) => updateForm({ level: e.target.value })}
-         />
-       </div>
-
-       <div className="form-group">
-        <label htmlFor='submit' >submit button</label>
-         <input
-           type="submit"
-           id="submit"
-           value="Send"
-           className="btn btn-primary"
-         />
-       </div>
-     </form>
      <h3>My Resume</h3>
-     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://resume.us-southeast-1.linodeobjects.com/Aden_Cox_-_Programmer.pdf" target="_blank" rel="noreferrer">here</a></p>
+     <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/17T7PjFmNozJpgyTO5KPPqNf8lvcz9pBH/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
      <h3>Project Downloads</h3>
      <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
    </div>
