@@ -4,6 +4,8 @@ function HTML() {
   return (
     <div id="htmlDiv">
     <li className="cSharpProjectNames">My Websites</li>
+    <div>
+      <h1>College Website Assignments</h1>
      <a href="webpages/html/CoxCh5/index.html" className='webLinks'>First Webpage</a>
      <a href="webpages/html/CoxCh6/index.html" className='webLinks'>Second Webpage</a>
      <a href="webpages/html/CoxCh7/index.html" className='webLinks'>Third Webpage</a>
@@ -12,9 +14,13 @@ function HTML() {
     <br></br>
     <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
     <a href="http://rwd-examples.inquisitiveprogramming.com/ch9/CoxAdenCh9/index.html" className='webLinks'>Responsive Design Example</a>
+    </div>
+
   <br></br>
   {/* This is the poems website for summit */}
-  <a href="webpages/html/Poems/index.html" className='webLinks'>Poems</a>
+  <a href="webpages/html/Poems/index.html" className='webLinks'>My Poems!</a>
+  <a href="webpages/html/SummitsPoems/index.html" className='webLinks'>Summit's Poems</a>
+
   <a href="MeganAlmon.com" className='webLinks'>MeganAlmon.com</a>
 
 
