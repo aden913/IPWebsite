@@ -134,7 +134,7 @@ li:hover {
 #cSharpDiv {
   background-image: url("./images/cSharpLogoTrans.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
@@ -164,7 +164,7 @@ li:hover {
 #cPlusPlusDiv {
   background-image: url("./images/cPlusPlusLogo.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
@@ -179,7 +179,7 @@ li:hover {
 #htmlDiv {
   background-image: url("./images/htmlLogo.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
@@ -194,7 +194,7 @@ li:hover {
 #phpDiv {
   background-image: url("./images/phpLogo.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
@@ -209,7 +209,7 @@ li:hover {
 #vbDiv{
   background-image: url("./images/visualBasicLogo.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
@@ -305,7 +305,7 @@ footer {
 #vbDiv{
   background-image: url("./images/visualBasicLogo.png");
   background-size: 25vw;
-  background-position: center;
+  background-position: 84% 124%;
   background-attachment: fixed, scroll;
   background-repeat: no-repeat;
 
