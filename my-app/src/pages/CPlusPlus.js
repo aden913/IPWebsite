@@ -2,7 +2,7 @@ import React from 'react';
 import Collapsible from 'react-collapsible';
 import schoolVideo from '../images/schoolVideo.mp4';
 import cPlusEx from '../images/cPlusEx.PNG';
-
+import SEGame from './resources/SchoolEscape.zip';
 function CPlusPlus() {
   return (
     <div>
@@ -12,6 +12,8 @@ function CPlusPlus() {
    <li className="cSharpProjectNames">School Escape</li>
    <p className="cSharpProjectText">School Escape was made entirely in C++. This is a text based adventure where you are stuck in a school with a monster, and you must find your way out. The techniques I used to create this game are pretty advanced. The c++ concepts used here include link-lists, pointers, simple ai, classes, and minor windows manipulation. I really like the class system I implemented the most. At the start of the game you can choose one of three characters to play as. Each have diffferent items to aid them on their escape. It took several months to code and create, alot of passion went into it and I am overall very satisfied with how it turned out.</p>
    <video className="videos"  autoPlay loop muted><source src={schoolVideo}></source></video>
+   <a href={SEGame}> Download and play school escape!</a>
+   <p>School Escape is built to be played on windows. Will likely fail to work on anything else...</p>
    </div>
 
    <div id="cPlusPlusDiv">

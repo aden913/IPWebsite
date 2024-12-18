@@ -1,10 +1,8 @@
 import React from 'react';
-import poems from '../../public/webpages/html/PoemsReact/poems'
+//import poems from '../../public/webpages/html/PoemsReact/poems'
 import { Link } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-'my-app/public/webpages/html/PoemsReact'
-'my-app/src/pages/React'
+
 function ReactPage() {
   return (
     <div>
@@ -23,13 +21,14 @@ function ReactPage() {
    </div>
 
     <div id="reactDiv">
-        <a href="./my-app/public/webpages/html/PoemsReact/poems" className='webLinks'></a>
         <li><Link to="/poems">My Poems But in React!</Link></li>
-  <Router>
-    <Routes>
-      <Route path="/poems" element={<poems />} />
-    </Routes>
-  </Router>
+  <p>This is a react page created to store my created poems. It has also suited me as a bit of a playground to practice react code and implement it in different ways such as:</p>
+  <ul>
+    <li>React MarkDown</li>
+    <li>React Pagination</li>
+    <li></li>
+  </ul>
+    
     </div>
 
     </div>

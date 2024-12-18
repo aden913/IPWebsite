@@ -15,7 +15,7 @@ import VB from './pages/VB';
 import Apps from './pages/Apps';
 import Contact from './pages/Contact';
 import Header from './components/Header';
-import './images/TTChocolates-Regular.otf';
+import Poems from './pages/PoemsReact/Poems'
 import './App.css';
 
 
@@ -37,6 +37,9 @@ function App() {
       <Route path="/ReactPage" element={<ReactPage />} />
       <Route path="/VB" element={<VB />} />
       <Route path="/Contact" element={<Contact />} />
+
+      <Route path="/Poems" element={<Poems />} />
+
     </Routes>
   </Router>
 
