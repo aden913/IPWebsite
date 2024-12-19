@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Jura";
+    src: url("../../images/fonts/Jura-VariableFont_wght.ttf");
+    font-weight: bold;
+  }
+
+  #aboutDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-bottom: 120px;
+  }
+  #aboutText {
+    font-size: 1.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    float:right;
+    font-family: "Jura";
+    color: #01133f;
+    background:none;
+  }
+  #questionMarkImg {
+    display: inline-block;
+    margin-left: 100px;
+    width:30vw;
+  }

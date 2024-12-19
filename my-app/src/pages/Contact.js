@@ -1,19 +1,29 @@
 import React from 'react';
+import "./styles/Contact.css"
 
 function Contact() {
   return (
     <div>
       <div id="contactDiv">
-   <li className="cSharpProjectNames">Contact</li>
-   <div>
+   
+   
+<div>
 
-   <h3>Send Me A message!</h3>
-<p>Email me at inquisitiveprogramming@gmail.com</p>
+<fieldset>
+<legend className="ProjectNames">Send Me A message!</legend>
+<p id="resumeText">Email me at <div id="highlight">inquisitiveprogramming@gmail.com</div></p>
+</fieldset>
 
-<h3>My Resume</h3>
+<fieldset>
+<legend className="ProjectNames">My Resume</legend>
 <p id="resumeText">You can download my resume from <a id="resumeLink" href="https://drive.google.com/file/d/17T7PjFmNozJpgyTO5KPPqNf8lvcz9pBH/view?usp=sharing" target="_blank" rel="noreferrer">here</a></p>
-<h3>Project Downloads</h3>
+</fieldset>
+
+<fieldset>
+<legend className="ProjectNames">Project Downloads</legend>
 <p  id="resumeText">You can download my project files from <a id="resumeLink" href="https://github.com/aden913/portfolioProjects" target="_blank" rel="noreferrer">here</a></p>
+</fieldset>
+
 </div>
    </div>
     </div>

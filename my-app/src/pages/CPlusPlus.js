@@ -3,6 +3,7 @@ import Collapsible from 'react-collapsible';
 import schoolVideo from '../images/schoolVideo.mp4';
 import cPlusEx from '../images/cPlusEx.PNG';
 import SEGame from './resources/SchoolEscape.zip';
+import "./styles/CPlusPlus.css";
 function CPlusPlus() {
   return (
     <div>
@@ -20,13 +21,14 @@ function CPlusPlus() {
    <li className="cSharpProjectNames">Pointers</li>
    <p className="cSharpProjectText">This excersize was a introduction into using pointers in c++. Pointers are very powerful and can manage how you send variables and other data using the computers memory.</p>
    
+   <div>
    <Collapsible trigger="Number Sorter">
    <img id="projectImage" src={cPlusEx} alt='a c plus plus project'></img>
    </Collapsible>
 
    <div id='codeBlock'>           
-     <Collapsible trigger="Code Snippet">
-<code>
+    <Collapsible trigger="Number Sorter Code ">
+      <code>
      vector&lt;int&gt; myVec;<br></br>
 int number;<br></br>
 vector&lt;int&gt;::iterator iter;<br></br>
@@ -61,8 +63,9 @@ if (temp 	&#xFE65; (*vector)[i + 1])<br></br>
 &#x7D;<br></br>
 &#x7D; <br></br>
 return 0;<br></br>
-</code>
-     </Collapsible>             
+      </code>
+    </Collapsible>             
+   </div>
    </div>
    </div>
     </div>

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Jura";
+    src: url("../../images/fonts/Jura-VariableFont_wght.ttf");
+    font-weight: bold;
+  }
+  #phpDiv {
+    background-image: url("../../images/phpLogo.png");
+    background-size: 25vw;
+    background-position: 84% 124%;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+  font-family: "Jura";
+    margin:0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ProjectText {
+    color: #01133f;
+    font-size: 1.5vw;
+    width:50%;
+    margin-bottom: 1.5vw;
+  }
+
+  .webLinks{
+    color:inherit;
+    text-decoration: none;
+    text-align: center;
+    margin:0;
+    padding: .7vw 1vw .7vw 1vw;
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    background-color: #01133f48;
+    border-radius: .5vw;
+    font-size: 2vw;
+  }
+  .webLinks:link {
+    color:#01133f;
+    font-weight:bold;
+  }
+  .webLinks:visited {
+    color:#01133f;
+    font-weight:bold;
+  }
+  .webLinks:hover {
+    color: #02c8f0;
+  }
+  .webLinks:active {
+    color: #02c8f0;
+  }

@@ -5,7 +5,7 @@ import perilousVideo from '../images/perilousVideo.mp4';
 import captainVideo from '../images/captainVideo.mp4';
 import gauntletVideo from '../images/gauntletVideo.mp4';
 import safariVideo from '../images/safariVideo.mp4';
-
+import './styles/CSharp.css';
 function CSharp() {
   return (
     <div id="cSharpDiv">               

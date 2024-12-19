@@ -1,16 +1,16 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
+import "./styles/DB.css"
 
 function DB() {
   return (
-    <div>
+    
      
-   <div id="databaseDiv">
-   <li className="cSharpProjectNames">SQL Insert, Update, and Delete</li>
-                 
-   <p className="cSharpProjectText"> This database requirement recquired me to perform multiple inserts, updates, and deletes, in a MYSQL database.</p>      
-   
-   </div>
+   <div id="dbDiv">
+
+
+   <li className="ProjectNames">SQL Insert, Update, and Delete</li>
+   <p className="ProjectText"> This database requirement recquired me to perform multiple inserts, updates, and deletes, in a MYSQL database.</p>      
    <div id='codeBlock'> 
    <Collapsible trigger="SQL statements">
     
@@ -85,10 +85,12 @@ WHERE products.prod_id = orderitems.prod_id;<br></br>
    </Collapsible>
    </div>
 
-   <div id="databaseDiv">
-   <li className="cSharpProjectNames">SQL Create</li>                        
-   <p className="cSharpProjectText"> This SQL assignment is for creating databases. I learned how to create and manipulate a database as well as multiple tables and rows.</p> 
-   </div>
+
+
+  
+   <li className="ProjectNames">SQL Create</li>                        
+   <p className="ProjectText"> This SQL assignment is for creating databases. I learned how to create and manipulate a database as well as multiple tables and rows.</p> 
+   
    <div id='codeBlock'>      
    <Collapsible trigger="SQL statements">
     
@@ -275,6 +277,7 @@ GROUP BY efname;<br></br>
    </Collapsible>
    </div>
     </div>
+    
   );
 }
 

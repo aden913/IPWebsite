@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Jura";
+    src: url("../../images/fonts/Jura-VariableFont_wght.ttf");
+    font-weight: bold;
+  }
+#cPlusPlusDiv {
+    background-image: url("../../images/cPlusPlusLogo.png");
+    background-size: 25vw;
+    background-position: 84% 124%;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+    font-family: "Jura";
+    margin:0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos {
+    width:50vw;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.326);
+  }
+
+
+  
+.Collapsible {
+  
+    display:flex;
+    
+  }
+  .Collapsible__trigger {
+    font-family: "Jura";
+
+    background-color: #01133f48;
+    text-align: center;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    padding:2px;
+    font-size: 1.2vw;
+    border-radius: 8px;
+    
+  }
+  
+  .Collapsible__contentInner {
+    width:60%;
+    margin: 0 auto;
+    float:left;
+  
+  }
+  .Collapsible__contentOuter {
+    margin:0;
+    padding:0;
+  }
+  
+  
+  #codeBlock {
+    font-family: "Jura";
+    float: right;
+    
+    border-radius: 10px;
+    font-size: 1.2vw;
+    margin-left: 9vw;
+  }
+  code {font-size: 1.2vw;}

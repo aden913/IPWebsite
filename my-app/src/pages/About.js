@@ -1,15 +1,25 @@
 import React from 'react';
 import questionMark from '../images/questionMark.png';
+import "./styles/About.css"
 
 function About() {
   return (
-    <div>
-       <div id="aboutDiv">
+     
+<div id="aboutDiv">
    <img src={questionMark} alt="question mark" id="questionMarkImg"/>
-   
-   <p id="aboutText">Here at Inquisitive Programming I prioritize understanding concepts and background of what I am typing when I program. I value understanding what I implement into my projects. During the process of creating my programs I make sure to ask any and all questions I need to in order to understand my goal and/or problem. I find that the more questions I ask, the better my end product is.I am a college student currently enrolled at Aiken Technical College. I am nearing the end of my last semester to getting my 'Major In Computer Technology Programming Emphasis'. Last but not least welcome to my programming portfolio!</p>          
-   </div>
-    </div>
+   <div id="aboutText">
+   <li>
+    Welcome to Inquisitive Programming! I am Aden and this is my portfolio website!
+   </li>
+   <li>
+    I am a programmer that has worked on Apps, Databases, and Websites. I am familiar with HTML, CSS, JS, REACT, C++, C#, VB, PHP, NGINX, LINODE, PYTHON, and JAVA
+   </li>
+    <li>
+    Graduated from Aiken Technical College with an 'Associate in Applied Science Major in Computer Technology Emphasis in Programming'
+    </li>
+    </div>          
+</div>
+    
   );
 }
 

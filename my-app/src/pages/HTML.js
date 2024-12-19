@@ -1,11 +1,13 @@
 import React from 'react';
+import './styles/HTML.css';
 
 function HTML() {
   return (
     <div id="htmlDiv">
     <li className="cSharpProjectNames">My Websites</li>
     <div>
-      <h1>College Website Assignments</h1>
+      <fieldset id="arranger">
+      <legend>College Website Assignments</legend>
      <a href="webpages/html/CoxCh5/index.html" className='webLinks'>First Webpage</a>
      <a href="webpages/html/CoxCh6/index.html" className='webLinks'>Second Webpage</a>
      <a href="webpages/html/CoxCh7/index.html" className='webLinks'>Third Webpage</a>
@@ -14,6 +16,7 @@ function HTML() {
     <br></br>
     <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
     <a href="http://rwd-examples.inquisitiveprogramming.com/ch9/CoxAdenCh9/index.html" className='webLinks'>Responsive Design Example</a>
+    </fieldset>
     </div>
 
   <br></br>
@@ -24,7 +27,15 @@ function HTML() {
   <a href="MeganAlmon.com" className='webLinks'>MeganAlmon.com</a>
 
 
-  <p className="cSharpProjectText">These webpages were created by me when I was learning to code HTML. All progress in intricacy gaining working links, buttons, and forms.<br></br> There is also a simle example using several bootstrap options as well as another simple example for responsive design to manage mobile devices.</p>
+  <li className="ProjectText">
+    I have a strong foundation in html design. I find it interesting and fun to learn more concepts surrounding web design with a foundation of html. 
+  </li>
+  <li className="ProjectText">
+    MeganAlmon.com is a website that was made for a christian apologetic speaker to serve as a landing page for people to learn more about her and possibly inquire about booking her to speak. This was mostly done using wordpress.
+  </li>
+  <li className="ProjectText">
+    The websites created while in studying in school are rather basic. They have built up though provide a foundation in concepts that are extremely important for web design. For example: Web Responsiveness, accessibility, as well as readibilty, and asthetics. 
+      </li>
   </div>
   );
 }
