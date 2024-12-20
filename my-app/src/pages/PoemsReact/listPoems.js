@@ -664,7 +664,7 @@ Into the solemnly sweet dawn
 In search of what is right
 A way that he might unite.
 Not to forget this mistake
-But find somehting not so fake.
+But find something not so fake.
       `
     },
     {
