@@ -586,80 +586,85 @@ And now nothing in my room is out of reach.
       id: 26,
       title: "Evolland",
       content: `
-  Welcome to Evolland! Where the adventure doesn't end!
-An adventure that all can't help but attend.
-Our story begins in a quiet part of our wonderland
+Our story begins in Evolland!  
+An adventure everyone must attend.  
+Peering over into a quiet part of the wonderland
 A small village on the outskirts of Evolland.
 
-Our hero preparing to set off on his adventure
-With everything in order he sets off on his venture.
+Our hero preparing to set off for adventure
+With everything in order, he begins the venture.
 He cannot contain that he is excited
-to one day be united.
+to fulfill his dreams to be united.
 
-With a skip and a hop he is on the way
-He continues along a dirt path without delay.
-Passing by others on adventures of their own
+With a skip and a hop he is on his way
+He marches along rocky paths without delay.
+Seeing others on travels of their own
 Making our hero feel quite alone.
 
-Others were enjoying their time mostly in pairs
-Filled with an overwhelming feeling that this is unfair.
+Enjoying eachother in their pair,  
+Feeling that this is rather unfair.
 Our hero can't help but to despair
-Yet they continue on to elsewhere.
+Yet he continues on to elsewhere.
 
 The images stuck in his mind
-Of his fellow members of mankind
+Of other members of mankind
 Swooning over eachother,
-That reminded him of his father and mother.
+Made him want to run for cover.
 
-Yet of the other adventurers he saw something new
+While leering at them he saw something new
 They were performing all sorts of taboo.
 This started to fill our hero with doubt
-Not sure what his adventure was all about.
+Not sure what his adventures were all about.
 
 He sits down to rest
-Under a tree with a quiet bird's nest.
-Falling asleep to the sweet sound of a lovebird's song
-Assuring their feathery mate they surely belong
+Under a quiet bird's nest.
+Growing drowsey from a lovebird's song
+Assuring their mate they surely belong
 
 Filled with a renewed sense of what's right
-They set off again at first sunlight.
+He sets off again at first sunlight.
 Into the deep dark woods
-Leaving behind this sense of falsehood.
+Leaving behind adventures' falsehoods.
 
 Approaching a break in the trees
-Into an open space littered with debris.
+Clambering through all the debris.
 A serene place, was this hidden glade.
-But not alone, for something waits in the shade.
+But not alone, for something waits in shade.
 
 A creature of tall stature
-Our hero finds his heart quite enraptured.
+Our hero finds himself quite enraptured.
 With wings of leather
-They float above the ground light as a feather.
+They float, light as a feather.
 
 Our hero struggled to stand upright
 At this beautifully dangerous sight.
-The creature extends its finger invites him to come
-Our hero succumbs, feeling completely numb.
+The creature beckons him to come
+Our hero can't help but to succomb
 
 Closer and closer our hero crawls
 unable to withstand the creatures call.
-Until in the creatures embrace
-Our hero sees their face.
+Once in the creatures embrace
+Our hero sees her face.
 
-The creature sneers with malicious intent
-Ready to devour our hero's scent.
-All goes black
-After the attack
+The creature stares with ambivalous intent
+Close enough to devour our hero's scent.
+His sight fades to black
+As she begins her attack
 
-Our hero lies on the ground
+Our hero lies alone on the ground
 Still numb to touch and sound.
 Feeling as though something missing
-From the devil's kissing.
+From the devil's deceptive kissing.
 
-Our Hero slowly returns to standing
+Our Hero slowly begins standing
 As though under a new branding.
-Our hero walks on
+He decides to continue on
 Into the solemnly sweet dawn
+
+In search of what is right
+A way that he might unite.
+Not to forget this mistake
+But find somehting not so fake.
       `
     },
     {

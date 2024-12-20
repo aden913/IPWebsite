@@ -1,6 +1,4 @@
 import React from 'react';
-import listPoems from "./listPoems";
-import PoemDisplay from "../../components/PoemDisplay";
 import PoemsWithPagination from '../../components/PoemsWithPagination';
 
 
