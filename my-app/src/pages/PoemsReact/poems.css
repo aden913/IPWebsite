@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "plex";
+    src: url("./font/IBMPlexSerif-Regular.ttf");
+    font-weight: bold;
+  }
+
 html {
     background-color: #f8f8ff;
     scroll-behavior: smooth;
@@ -23,103 +29,12 @@ a {
     color:darkgoldenrod;
     
 }
-.topButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 40px;
-    border-radius: 1vw;
-    background-color: rgb(100, 149, 237);
-    color:white;
-    margin-top: 9vw;
-}
+
 ::selection {
     background:white;
   }
 
-.poemDivAden, .poemDivNathan, .poemDivJosue, .poemDivSam, .poemDivEmma
-{
-    margin:0 auto;
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: bisque;
-    padding:5%;
-    border-radius: 1vw;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 15%;   
-}
-.poemDivAden
-{
-    box-shadow: 13px 5px 9px rgb(198 155 104 / 46%);
-}
-.poemDivNathan
-{
-    background-color: rgb(255, 196, 196);
-    box-shadow: 13px 5px 9px rgba(198, 104, 104, 0.46);
-}
 
-.poemDivJosue
-{
-    background-color: rgb(228, 196, 255);
-    box-shadow: 13px 5px 9px rgba(152, 104, 198, 0.46);
-}
-
-.poemDivSam
-{
-    background-color: rgb(196, 255, 204);
-    box-shadow: 13px 5px 9px rgba(104, 198, 134, 0.46);
-}
-.poemDivEmma
-{
-    background-color: rgb(158, 158, 251);
-    box-shadow: 13px 5px 9px rgba(107, 104, 198, 0.46);
-}
-.navDiv
-{
-    display: flex;
-    flex-direction: row;
-}
-#aden, #Josue, #Nathan, #Sam, #Emma
-{
-    display: flex;
-    align-items:center;
-    justify-content:flex-start;
-    flex-direction:column;
-    overflow:visible;
-}
-
-#adensPoems, #nathansPoems, #josuesPoems, #samsPoems, #emmasPoems
-{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-
-
-#Nathan a {
-    color:rgb(184, 11, 11);
-    background-color: rgb(255, 196, 196);
-}
-#Josue a {
-    color:rgb(103, 11, 184);
-    background-color: rgb(228, 196, 255);
-}
-
-#Sam a {
-    color:rgb(11, 184, 66);
-    background-color: rgb(196, 255, 204);
-}
-
-#Emma a {
-    background-color:  lavender;
-    color:rgb(124, 124, 253);
-}
 h1{
     text-align: center;
     text-decoration: underline;
@@ -129,20 +44,13 @@ h2{
     margin-left: 20px;
     font-size: 2vw;
 }
+p{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+}
 aside{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#buttonDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 40px;
-    border-radius: 1vw;
-    background-color: rgb(100, 149, 237);
-    color:white;
-    margin-top: 9vw;
-}

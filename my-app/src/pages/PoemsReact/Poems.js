@@ -1,10 +1,10 @@
 import React from 'react';
 import PoemsWithPagination from '../../components/PoemsWithPagination';
-
+import './poems.css'
 
 function Poems() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif" }}>
+    <div>
     {/* <h1 style={{ textAlign: "center", margin: "20px 0" }}>My Poetry Collection</h1> */}
     <PoemsWithPagination />
    {/*  {listPoems.map((listPoems) => (
