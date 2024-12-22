@@ -671,45 +671,45 @@ But find something not so fake.
       id: 27,
       title: "The Land of Guh",
       content: `
-  Our hero, left in a rough state
+Our hero, left in a rough state
 Is on a journey to locate
 A treasure of old
 More valuable than gold.
 
 And so our hero limps onward
-Barely able to grasp his sword.
-Shuffling for days, due to the devils wrath
-He walks this lonely path.
+Quiet, nothing to be heard
+Courage stolen from the devils' wrath
+He walks his solemn lonely path.
 
-Along a path of dust and dirt
-Accompanied only with memories of hurt.
+A way of dust and dirt
+Burdened by memories of hurt.
 He continues his stride,
-With hope being his only guide.
+Hope being his guide.
 
 A journey with nothing much
-Sand, cracked dirt, everything that is dry to the touch.
+Everything dry to the touch.
 No beauty in sight
 For our lonely knight.
 
-Our hero makes his way into a new land
-With a numbing sensation threatening his ability to stand.
+Stumbling into a new land
+Barely able to stand.
 The land is full of beautiful sights
-Lush fields of green, kids playing under the sun, and kites in flight.
+Of vibrant greens and whites.
 
 The journey coming to its end
-With the treasure being just around the bend.
+Just around the bend.
 Our hero holds himself together
-Throwing off his sword and tattered leather.
+Releasing sword and tattered leather.
 
 A building at the end of the road
 From which the life of the land flowed.
 Limping up to the door
-Brushing against the warm feel of the floor.
+Embracing for what's more.
 
 He opens the door with a shove
 In desperate need of Love.
-Into the wide an open room
-That attempts to burn away his gloom.
+Into a wide open room
+That burns away his gloom.
 
 Greeted by a woman of gold
 Who loves quite bold.
@@ -719,7 +719,7 @@ And tells him "You've found your place".
 The end of our hero's story
 Being wrapped up in glory.
 Soothing his pain more than any drug
-Was his journey to find his long lost hug.
+Was his journey to find this long lost hug.
       `
     },
     {
