@@ -16,6 +16,7 @@ import Apps from './pages/Apps';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import Poems from './pages/PoemsReact/Poems'
+import Art from './pages/artReact/Art'
 import './App.css';
 
 
@@ -39,6 +40,7 @@ function App() {
       <Route path="/Contact" element={<Contact />} />
 
       <Route path="/Poems" element={<Poems />} />
+      <Route path="/Art" element={<Art />} />
 
     </Routes>
   </Router>

@@ -25,6 +25,10 @@ function ReactPage() {
     <li>React MarkDown</li>
     <li>React Pagination</li>
 
+    <li className="ProjectNames"><Link to="/Art">A Collection of Art that I have done</Link></li>
+<p className="ProjectText"> </p>
+  
+
 </div>
   );
 }
