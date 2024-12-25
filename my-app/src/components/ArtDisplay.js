@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Gallery from "react-photo-gallery";
+import { Gallery } from "react-grid-gallery";
 
 // Importing images
 import drawingAbigail from "../pages/artReact/images/Drawings/Abigaill.jpg";
@@ -16,7 +16,6 @@ import drawingSpaceDiamond from "../pages/artReact/images/Drawings/SpaceDiamond.
 import drawingSpiderEye from "../pages/artReact/images/Drawings/SpiderEye.jpg";
 import drawingSusRocks from "../pages/artReact/images/Drawings/SusRocks.jpg";
 import drawingWomanEye from "../pages/artReact/images/Drawings/WomanEye.jpg";
-//New Images
 import drawingEyes1 from "../pages/artReact/images/Drawings/eyes1.jpg";
 import drawingDragon from "../pages/artReact/images/Drawings/dragon.jpg";
 import drawingFingers from "../pages/artReact/images/Drawings/fingerstudy1.jpg";
@@ -45,95 +44,85 @@ import sculptureRobot from "../pages/artReact/images/3d/robot.jpg";
 import otherCryEye from "../pages/artReact/images/Paint/cry eye.jpg";
 
 const categories = {
-    All: [
-        { src: drawingAbigail, width: 4, height: 4 },
-        { src: drawingFloatingClouds, width: 4, height: 3 },
-        { src: drawingHairStudy, width: 4, height: 3 },
-        { src: drawingLilia, width: 3, height: 4 },
-        { src: drawingLockForest, width: 4, height: 3 },
-        { src: drawingMaleBodyStudy, width: 4, height: 4 },
-        { src: drawingOberon, width: 3, height: 4 },
-        { src: drawingOuttaLove, width: 4, height: 3 },
-        { src: drawingSadPanda, width: 4, height: 4 },
-        { src: drawingShh, width: 3, height: 4 },
-        { src: drawingSpaceDiamond, width: 4, height: 3 },
-        { src: drawingSpiderEye, width: 4, height: 3 },
-        { src: drawingSusRocks, width: 3, height: 4 },
-        { src: drawingWomanEye, width: 4, height: 4 },
-        { src: drawingEyes1, width: 4, height: 5 },
-        { src: drawingDragon, width: 3, height: 4 },
-        { src: drawingFingers, width: 4, height: 5 },
-        { src: drawingLev, width: 6, height: 4 },
-        { src: drawingPikmin, width: 4, height: 5 },
-        { src: drawingBear, width: 3, height: 4 },
-        { src: drawingGirl, width: 3, height: 4 },
-        { src: drawingEyes2, width: 4, height: 5 },
-        { src: drawingGirl2, width: 3, height: 4 },
-        { src: drawingGirl3, width: 4, height: 5 },
-        { src: drawingFlower, width: 3, height: 4 },
-        { src: drawingMan, width: 4, height: 5 },
-        { src: drawingHands, width: 4, height: 5 },
-        { src: drawingHands2, width: 3, height: 4 },
-        { src: sculptureAbstract, width: 4, height: 3 },
-        { src: sculptureBedMonster, width: 4, height: 3 },
-        { src: sculptureCrayonHand, width: 4, height: 3 },
-        { src: sculptureHemoFearMonster, width: 4, height: 3 },
-        { src: sculptureHorseGlazed, width: 4, height: 3 },
-        { src: sculptureLootbox, width: 4, height: 4 },
-        { src: sculptureManMonster2, width: 4, height: 3 },
-        { src: sculptureManMonster, width: 4, height: 3 },
-        { src: sculptureMaskMonster, width: 4, height: 5 },
-        { src: sculptureRobot, width: 4, height: 4 },
-      { src: otherCryEye, width: 3, height: 4 },
-    ],
-    Drawings: [
-      { src: drawingAbigail, width: 4, height: 4 },
-      { src: drawingFloatingClouds, width: 4, height: 3 },
-      { src: drawingHairStudy, width: 4, height: 3 },
-      { src: drawingLilia, width: 3, height: 4 },
-      { src: drawingLockForest, width: 4, height: 3 },
-      { src: drawingMaleBodyStudy, width: 4, height: 4 },
-      { src: drawingOberon, width: 3, height: 4 },
-      { src: drawingOuttaLove, width: 4, height: 3 },
-      { src: drawingSadPanda, width: 4, height: 4 },
-      { src: drawingShh, width: 3, height: 4 },
-      { src: drawingSpaceDiamond, width: 4, height: 3 },
-      { src: drawingSpiderEye, width: 4, height: 3 },
-      { src: drawingSusRocks, width: 3, height: 4 },
-      { src: drawingWomanEye, width: 4, height: 4 },
-      { src: drawingEyes1, width: 4, height: 5 },
-      { src: drawingDragon, width: 3, height: 4 },
-      { src: drawingFingers, width: 4, height: 5 },
-      { src: drawingLev, width: 6, height: 4 },
-      { src: drawingPikmin, width: 4, height: 5 },
-      { src: drawingBear, width: 3, height: 4 },
-      { src: drawingGirl, width: 3, height: 4 },
-      { src: drawingEyes2, width: 4, height: 5 },
-      { src: drawingGirl2, width: 3, height: 4 },
-      { src: drawingGirl3, width: 4, height: 5 },
-      { src: drawingFlower, width: 3, height: 4 },
-      { src: drawingMan, width: 4, height: 5 },
-      { src: drawingHands, width: 4, height: 5 },
-      { src: drawingHands2, width: 3, height: 4 },
-    ],
-    Sculptures: [
-      { src: sculptureAbstract, width: 4, height: 3 },
-      { src: sculptureBedMonster, width: 4, height: 3 },
-      { src: sculptureCrayonHand, width: 4, height: 3 },
-      { src: sculptureHemoFearMonster, width: 4, height: 3 },
-      { src: sculptureHorseGlazed, width: 4, height: 3 },
-      { src: sculptureLootbox, width: 4, height: 4 },
-      { src: sculptureManMonster2, width: 4, height: 3 },
-      { src: sculptureManMonster, width: 4, height: 3 },
-      { src: sculptureMaskMonster, width: 4, height: 5 },
-      { src: sculptureRobot, width: 4, height: 4 },
-    ],
-    Other: [
-      { src: otherCryEye, width: 1, height: 1 },
-    ],
-  };
-  
-
+  All: [
+    ...[
+      drawingAbigail, drawingFloatingClouds, drawingHairStudy, drawingLilia, drawingLockForest,
+      drawingMaleBodyStudy, drawingOberon, drawingOuttaLove, drawingSadPanda, drawingShh,
+      drawingSpaceDiamond, drawingSpiderEye, drawingSusRocks, drawingWomanEye, drawingEyes1,
+      drawingDragon, drawingFingers, drawingLev, drawingPikmin, drawingBear, drawingGirl,
+      drawingEyes2, drawingGirl2, drawingGirl3, drawingFlower, drawingMan, drawingHands,
+      drawingHands2,
+    ].map((src) => ({
+      src,
+      thumbnail: src,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    })),
+    ...[
+      sculptureAbstract, sculptureBedMonster, sculptureCrayonHand, sculptureHemoFearMonster,
+      sculptureHorseGlazed, sculptureLootbox, sculptureManMonster2, sculptureManMonster,
+      sculptureMaskMonster, sculptureRobot,
+    ].map((src) => ({
+      src,
+      thumbnail: src,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    })),
+    ...[
+      otherCryEye,
+    ].map((src) => ({
+      src,
+      thumbnail: src,
+      thumbnailWidth: 300,
+      thumbnailHeight: 400,
+    })),
+  ],
+  Drawings: [
+    { src: drawingAbigail, thumbnail: drawingAbigail, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingFloatingClouds, thumbnail: drawingFloatingClouds, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingHairStudy, thumbnail: drawingHairStudy, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingLilia, thumbnail: drawingLilia, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingLockForest, thumbnail: drawingLockForest, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingMaleBodyStudy, thumbnail: drawingMaleBodyStudy, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingOberon, thumbnail: drawingOberon, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingOuttaLove, thumbnail: drawingOuttaLove, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingSadPanda, thumbnail: drawingSadPanda, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingShh, thumbnail: drawingShh, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingSpaceDiamond, thumbnail: drawingSpaceDiamond, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingSpiderEye, thumbnail: drawingSpiderEye, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingSusRocks, thumbnail: drawingSusRocks, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingWomanEye, thumbnail: drawingWomanEye, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingEyes1, thumbnail: drawingEyes1, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingDragon, thumbnail: drawingDragon, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingFingers, thumbnail: drawingFingers, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingLev, thumbnail: drawingLev, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingPikmin, thumbnail: drawingPikmin, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingBear, thumbnail: drawingBear, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingGirl, thumbnail: drawingGirl, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingEyes2, thumbnail: drawingEyes2, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingGirl2, thumbnail: drawingGirl2, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingGirl3, thumbnail: drawingGirl3, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingFlower, thumbnail: drawingFlower, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: drawingMan, thumbnail: drawingMan, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingHands, thumbnail: drawingHands, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: drawingHands2, thumbnail: drawingHands2, thumbnailWidth: 400, thumbnailHeight: 300 },
+  ],
+  "3D Sculptures": [
+    { src: sculptureAbstract, thumbnail: sculptureAbstract, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: sculptureBedMonster, thumbnail: sculptureBedMonster, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: sculptureCrayonHand, thumbnail: sculptureCrayonHand, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: sculptureHemoFearMonster, thumbnail: sculptureHemoFearMonster, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: sculptureHorseGlazed, thumbnail: sculptureHorseGlazed, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: sculptureLootbox, thumbnail: sculptureLootbox, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: sculptureManMonster2, thumbnail: sculptureManMonster2, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: sculptureManMonster, thumbnail: sculptureManMonster, thumbnailWidth: 300, thumbnailHeight: 400 },
+    { src: sculptureMaskMonster, thumbnail: sculptureMaskMonster, thumbnailWidth: 400, thumbnailHeight: 300 },
+    { src: sculptureRobot, thumbnail: sculptureRobot, thumbnailWidth: 300, thumbnailHeight: 400 },
+  ],
+  Paintings: [
+    { src: otherCryEye, thumbnail: otherCryEye, thumbnailWidth: 300, thumbnailHeight: 400 },
+  ],
+};
 
 const ArtDisplay = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -143,7 +132,7 @@ const ArtDisplay = () => {
   };
 
   return (
-    <div style={{marginLeft:"3vw",marginRight:"3vw"}}>
+    <div style={{ marginLeft: "3vw", marginRight: "3vw" }}>
       <div style={{ marginBottom: "20px" }}>
         {Object.keys(categories).map((category) => (
           <button
@@ -163,7 +152,7 @@ const ArtDisplay = () => {
           </button>
         ))}
       </div>
-      <Gallery photos={categories[selectedCategory] || []} />
+      <Gallery images={categories[selectedCategory]} enableImageSelection={false} />
     </div>
   );
 };
