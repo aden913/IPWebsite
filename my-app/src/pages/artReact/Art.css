@@ -1,4 +1,10 @@
-h1{margin:0;
+@font-face {
+  font-family: "Jura";
+  src: url("../../images/fonts/Jura-VariableFont_wght.ttf");
+  font-weight: bold;
+}
+h1{
+  margin:0;
     padding:0;
     margin-top:1.5vw;
     margin-bottom: 1.5vw;
@@ -6,8 +12,9 @@ h1{margin:0;
     font-weight: bold;
     color:#02c8f0;
     width: 100%;
-    text-align: center;}
-
+    text-align: center;
+    font-family: "Jura";
+}
     .art-display-container {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -39,7 +46,7 @@ h1{margin:0;
       
       @media (max-width: 768px) {
         .art-display-container {
-          margin-left: 3vw;
+          margin-left: 13vw;
           margin-right: 3vw;
         }
       

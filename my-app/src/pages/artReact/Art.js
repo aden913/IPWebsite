@@ -5,7 +5,7 @@ import './Art.css'
 function Art() {
   return (
     <div>
-        <h1>Welcome! This is a repository containing the art that I have done throughout the years! Hope you enjoy</h1>
+        <h1>Welcome! <br></br>This is a repository containing the art that I have done throughout the years! <br></br>Hope you enjoy</h1>
     <ArtDisplay />
   </div>
   
