@@ -1010,8 +1010,65 @@ Is the reason mannerisms matter.
       `
     },
    
-  ];
   
+  {
+  id: 35,
+    title: "Gary and His Cold Furnace (Psalm 103)",
+    content: `
+Gary is a special little golem
+That struggled with a special little problem
+All the other golems had big hot furnaces
+That would heat up all nearby surfaces
+
+But the furnace in Gary's chest
+Was unlike all the rest
+The flame in his chest was weak
+Making him feel rather meek
+
+When everyone left to work
+Gary would stay back to lurk
+His situation quite dire
+Because of his small fire
+
+"Your fire is cold"
+Is what he was told
+He wanted to do better
+Something that might matter 
+
+But his furnace was quite chilly
+And he felt too guilty
+Gary felt rather sad
+And wanted what others had
+
+Gary began to stare at his flame
+In it's tiny little frame
+"Why are you so timid
+Everything I do is frigid
+
+My work is not good
+It doesn't turn out like it should
+I just want to please the creator
+But I just feel like a traitor
+
+So, if you can listen please
+Hear me and my pleas
+Grow to be much stronger
+So that I may no longer be somber
+
+I want to do better
+Something that will matter
+His flame heard his whispers
+And Gary's doubts began to wither
+
+Gary's small flame began to bloom
+Until there was no more room
+So Gary stands up once more
+To do what he was made for
+    `
+
+  }
+
+];
   export default listPoems;
   
 
