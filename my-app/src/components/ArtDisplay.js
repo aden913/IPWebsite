@@ -132,21 +132,13 @@ const ArtDisplay = () => {
   };
 
   return (
-    <div style={{ marginLeft: "3vw", marginRight: "3vw" }}>
-      <div style={{ marginBottom: "20px" }}>
+    <div className="art-display-container">
+      <div className="category-buttons">
         {Object.keys(categories).map((category) => (
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            style={{
-              margin: "0 1vw",
-              padding: "10px 20px",
-              cursor: "pointer",
-              background: selectedCategory === category ? "#007BFF" : "#CCC",
-              color: "#FFF",
-              border: "none",
-              borderRadius: "5px",
-            }}
+            className={`category-button ${selectedCategory === category ? "active" : ""}`}
           >
             {category}
           </button>
@@ -158,3 +150,4 @@ const ArtDisplay = () => {
 };
 
 export default ArtDisplay;
+

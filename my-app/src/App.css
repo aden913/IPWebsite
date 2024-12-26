@@ -85,45 +85,72 @@ li:hover {
 #mobileNav {display:none;}
 
 
+
 @media only screen and (max-width: 767px) {
-#questionMarkImg {display:none;}
-#aboutText 
-{
-margin:2vw auto;
-width: 50%;
-font-size: 3vw;
-}
-#mobileNav 
-{
-  display:inline-block;
-  position:fixed;
-  top:0;
-  background-color: #01133f;
-  color:white;
-  list-style: none;
-  font-family: "TTChocolatesRegular";
-  height: 100%;
-  display:flex;                               
+  #questionMarkImg { display: none; }
+  #aboutText {
+    margin: 2vw auto;
+    width: 50%;
+    font-size: 3vw;
+  }
+
+  #mobileNav {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #01133f;
+    color: white;
+    list-style: none;
+    font-family: "Jura";
+    
+    height: 100%;
+    width: 60%; /* Adjust width of the sidebar */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 2vw;
+    border-radius: 0px 0 5px 0;
+    padding: 0;
+    z-index: 1001;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Initially off-screen */
+  }
+  #flexDiv{display:flex;
   flex-direction: column;
-  margin:0;               
-  font-size: 1.4vw;
-  border-radius: 0px 0 5px 0;
-  padding: 0;
-  z-index:1001;
-  font-size: 2vw;
+margin-top: 13vw;}
+  #mobileNav.open {
+    display: block; /* Show the nav when the button is clicked */
+    transform: translateX(0); /* Slide in from the left */
+  }
+
+  #mobileNav li {
+    margin-bottom: 7vw;
+    margin-top: 1.3vw;
+    font-size: 3vw;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1002; /* Ensure the hamburger button is above the header */
+    color:white;
+    background-color: #01133f;
+  }
+
+  .cSharpProjectText { font-size: 3vw; }
+  .Collapsible__trigger { font-size: 2vw; }
+  #vbDiv { width: 80%; }
+  h3 { font-size: 3vw; }
+  #resumeText { font-size: 2vw; }
+  #submit { font-size: 2vw; width: 12vw; height: 4vw; }
 }
-#mobileNav li 
-{
-  margin-bottom: 7vw;
-  margin-top: 1.3vw;
-}
-#navbar{display:none;}
-.cSharpProjectText {font-size: 3vw;}
-.Collapsible__trigger {font-size:2vw;}
-#vbDiv{width:80%;}
-h3{font-size: 3vw;}
-#resumeText{font-size: 2vw;}
-#submit{font-size: 2vw;
-  width:12vw;
-  height:4vw;}
-}
+
+
