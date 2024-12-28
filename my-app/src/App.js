@@ -17,9 +17,13 @@ import Contact from './pages/Contact';
 import Header from './components/Header';
 import Poems from './pages/PoemsReact/Poems'
 import Art from './pages/artReact/Art'
-import './App.css';
+//stylesheets
 
-
+import './pages/styles/font.css';
+import './pages/styles/aesthetics.css';
+import './pages/styles/legend.css';
+import './pages/styles/structure.css';
+import './pages/styles/media.css';
 function App() {
   
   return (

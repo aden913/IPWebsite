@@ -1,10 +1,8 @@
 import React from 'react';
-import "./styles/Contact.css"
 
 function Contact() {
   return (
-    <div>
-      <div id="contactDiv">
+      <div className='AlignCenter'>
    
    
 <div>
@@ -26,7 +24,6 @@ function Contact() {
 
 </div>
    </div>
-    </div>
   );
 }
 

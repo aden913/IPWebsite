@@ -6,12 +6,11 @@ import appLogin from '../images/appLogin.jpg';
 import app2Main from '../images/app2Main.jpg';
 import app2Play from '../images/app2Play.jpg';
 import app2Add from '../images/app2Add.jpg';
-import "./styles/Apps.css";
 function Apps() {
   return (
     <div>
      
-   <div id="appDiv">
+   <div className='AlignCenter'>
    <li className="ProjectNames">Question Quest</li>
    <p className="ProjectText">This app is intended to be a cross between trivia crack and quizlet. We intended for users to be able to create trivia and send them to people so that they may play them. The uses could be simple entertainment or even for teachers to send out a quiz to there students to study.</p>
    </div>

@@ -1,12 +1,11 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import "./styles/DB.css"
 
 function DB() {
   return (
     
      
-   <div id="dbDiv">
+   <div className='AlignCenter'>
 
 
    <li className="ProjectNames">SQL Insert, Update, and Delete</li>

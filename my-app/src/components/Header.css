@@ -1,0 +1,45 @@
+    .headerLi {
+    display:inline-block;
+    margin-left: 1vw;
+    margin-bottom: 20px;
+    margin-right: 1vw;
+    font-size:2vw;
+  }
+  .headerLi:hover {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.263), rgba(255, 255, 255, 0.08));
+    color:#02c8f0;
+    border-radius: 5px;
+  }
+  #mobileNav {display:none;}
+  
+  
+  
+  @media only screen and (max-width: 767px) {
+    
+    
+  
+    #mobileNav {
+      display: none; /* Initially hidden */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #01133f;
+      color: white;
+      list-style: none;
+      font-family: "Jura";
+      
+      height: 100%;
+      width: 60%; /* Adjust width of the sidebar */
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      font-size: 2vw;
+      border-radius: 0px 0 5px 0;
+      padding: 0;
+      z-index: 1001;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%); /* Initially off-screen */
+    }
+
+
+}

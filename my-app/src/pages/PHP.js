@@ -1,8 +1,7 @@
 import React from 'react';
-import "./styles/PHP.css"
 function PHP() {
   return (
-    <div id="phpDiv">
+    <div className='AlignCenter'>
     <li className="ProjectNames">MVVC PHP Project</li>
     <a href="webpages/php/coxaden7/index.php" className='webLinks'>MVVC PHP Project</a>
     <p className="ProjectText">This php project involved turning our project structure into the mvvc layout. The project itself connects to and manages a database.</p>

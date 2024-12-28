@@ -4,19 +4,11 @@
     font-weight: bold;
   }
 
-html {
-    background-color: #f8f8ff;
-    scroll-behavior: smooth;
-    font-size: 2vw;
-  }
   #smallText {
     font-size: 1vw;
   }
-  li {
-    list-style: none;
-    margin: 1.5vw;
-    font-size: 3vw;
-}
+ 
+
 .navLink {
     list-style: none;
     background-color: bisque;
@@ -24,28 +16,15 @@ html {
     
     padding: 1vw;
 }
-a {
-    text-decoration: none;
-    color:darkgoldenrod;
-    
-}
+
 
 ::selection {
     background:white;
   }
 
 
-h1{
-    text-align: center;
-    text-decoration: underline;
-    font-size: 4vw !important;
-}
-h2{
-    text-decoration: underline;
-    margin-left: 20px;
-    font-size: 2vw;
-}
-p{
+
+.poemText{
     font-size: 2.5vw;
     line-height: 2.2vw;
 }

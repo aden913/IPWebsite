@@ -1,0 +1,35 @@
+
+  #questionMarkImg {
+    display: inline-block;
+    margin-left: 100px;
+    width:30vw;
+  }
+
+  #cSharplogo {
+    display:inline;
+  }
+  
+  
+  .videos {
+    width:50vw;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.326);
+  }
+
+
+#projectImage {
+  margin-bottom:2vw;
+  max-width: 100%;
+  height: auto;
+}
+
+.bigPicture {
+  height:1vw;
+}
+
+@media only screen and (max-width: 767px) {
+ 
+#questionMarkImg { display: none; }
+
+}

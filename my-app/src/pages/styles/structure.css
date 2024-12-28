@@ -1,0 +1,99 @@
+
+
+  .videos {
+    width:50vw;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 14px 14px 10px rgba(0, 0, 0, 0.326);
+  }
+  .AlignCenter {
+    font-family: "Jura";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend{text-align: center;}
+
+
+#arranger{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column  ;
+}
+
+
+.App {
+  Display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+body{
+  margin:0; 
+ }
+
+ 
+#logo {
+  width:100vw;
+  background-color: #01133f;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+#navbar {
+  position:fixed;
+  top:0;
+  background-color: #01133f;
+  color:white;
+  list-style: none;
+  font-family: "Jura";
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  font-size: 1.4vw;
+  width:100%;
+  padding: 0;
+  z-index:1001;
+}
+#mobileNav {display:none;}
+h3{
+  color:#01133f;
+  text-align: center;
+  font-size: 1.5vw;
+  clear:both;
+}
+li {
+  display:inline-block;
+  margin-left: 1vw;
+
+  margin-right: 1vw;
+}
+
+@media only screen and (max-width: 767px) {
+
+#aboutText {
+  margin:3vw 4vw;
+}
+
+#mobileNav.open {
+  display: block; /* Show the nav when the button is clicked */
+  transform: translateX(0); /* Slide in from the left */
+}
+
+#mobileNav li {
+  margin-bottom: 7vw;
+  margin-top: 6vw;
+  font-size: 3vw;
+}
+
+#navbar {
+  display: none;
+}
+
+}

@@ -1,10 +1,9 @@
 import React from 'react';
-import './styles/HTML.css';
 
 function HTML() {
   return (
-    <div id="htmlDiv">
-    <li className="cSharpProjectNames">My Websites</li>
+    <div className='AlignCenter'>
+    <li className="ProjectNames">My Websites</li>
     <div>
       <fieldset id="arranger">
       <legend>College Website Assignments</legend>

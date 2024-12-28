@@ -3,3 +3,4 @@ my-app/build/
 my-app/.module-cache
 *.log*
 *.vscode
+emsdk/

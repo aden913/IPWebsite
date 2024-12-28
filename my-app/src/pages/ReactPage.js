@@ -1,11 +1,10 @@
 import React from 'react';
 //import poems from '../../public/webpages/html/PoemsReact/poems'
 import { Link } from 'react-router-dom';
-import "./styles/ReactPage.css";
 
 function ReactPage() {
   return (
-<div id="reactDiv">
+<div className='AlignCenter'>
 
 <li className="ProjectNames">Random Swatches</li>
 <a href="webpages/React/test.html" className='webLinks'>Random Swatches</a>
@@ -22,8 +21,8 @@ function ReactPage() {
 <li className="ProjectNames"><Link to="/poems">My Poems But in React!</Link></li>
 <p className="ProjectText">This is a react page created to store my created poems. It has also suited me as a bit of a playground to practice react code and implement it in different ways such as:</p>
   
-    <li>React MarkDown</li>
-    <li>React Pagination</li>
+    <li id='points'>React Pagination</li>
+    <li id='points'>React MarkDown</li>
 
     <li className="ProjectNames"><Link to="/Art">A Collection of Art that I have done</Link></li>
 <p className="ProjectText"> </p>

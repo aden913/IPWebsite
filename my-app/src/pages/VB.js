@@ -1,6 +1,5 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
-import "./styles/VB.css"
 import visualBasicScreenshot from '../images/visualBasicScreenshot.PNG';
 import vbCongrats from '../images/visualBasicCongrats.PNG';
 import vb2Index from '../images/vb2Index.PNG';
@@ -11,7 +10,7 @@ function CSharp() {
   return (
     <div>
      
-   <div id="vbDiv">
+   <div className='AlignCenter'>
    <li className="ProjectNames">Login Authenticator</li>
    <p className="ProjectText">This simple visual basic program emulates a user login. It requires specific logging requirements and also enforces them with tooltips.</p>
    </div>
@@ -25,7 +24,7 @@ function CSharp() {
    </Collapsible>
   </div>
    
-   <div id="vbDiv">
+   <div className='AlignCenter'>
    <li className="ProjectNames">Item Cart</li>
    <p className="ProjectText">This visual basic program takes orders and adds up the total of the ordered items and provides info based on what is entered.</p>
    </div>
