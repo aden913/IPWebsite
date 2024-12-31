@@ -15,10 +15,12 @@ import VB from './pages/VB';
 import Apps from './pages/Apps';
 import Contact from './pages/Contact';
 import Header from './components/Header';
-import Poems from './pages/PoemsReact/Poems'
-import Art from './pages/artReact/Art'
-//stylesheets
+//SubPages
+import Poems from './pages/PoemsReact/Poems';
+import Art from './pages/artReact/Art';
+import Three from './pages/Three';
 
+//stylesheets
 import './pages/styles/font.css';
 import './pages/styles/aesthetics.css';
 import './pages/styles/legend.css';
@@ -45,7 +47,7 @@ function App() {
 
       <Route path="/Poems" element={<Poems />} />
       <Route path="/Art" element={<Art />} />
-
+      <Route path="/Three" element={<Three />} />
     </Routes>
   </Router>
 
