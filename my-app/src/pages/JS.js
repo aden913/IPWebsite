@@ -16,7 +16,7 @@ function JS() {
    <p className="ProjectText">This javascript project takes 6 numbers and compares them to a random array of numbers 1-50. If the user guesses a number they win. </p>
   
   <li className='ProjectNmaes'>Three.js project</li>
-  <li className="ProjectNames"><Link to="/Three">Three.js project: Logo</Link></li>
+  <li className="ProjectNames"><Link to="/Three" className='webLinks'>Three.js project: Logo</Link></li>
   <p className="ProjectText">I was curious to learn how to use three.js. Three.js is a 3d website creation language that uses jsx to create a 3d environment. </p>
 
   
