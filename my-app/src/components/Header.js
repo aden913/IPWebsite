@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../images/logo250.png';
+import FontButton from './FontButton';
 
 function Header() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -10,10 +11,14 @@ function Header() {
     setIsMobileNavOpen(prevState => !prevState);
   };
 
+ 
+
   return (
     <div>
       <header id="logo">
         <img src={logo} alt="Logo" />
+        <FontButton/>
+
       </header>
       <button className="hamburger" onClick={toggleMobileNav}>
         &#9776; {/* Hamburger icon */}

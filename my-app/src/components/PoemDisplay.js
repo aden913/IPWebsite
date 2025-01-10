@@ -7,8 +7,8 @@ const PoemDisplay = ({ title, content }) => {
 
   return (
     <div style={styles.poemContainer}>
-      <h2 style={styles.title}>{title}</h2>
-      <div>
+      <h2 style={styles.title} className='ProjectNames'>{title}</h2>
+      <div className='ProjectText'>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {formattedContent}
         </ReactMarkdown>
