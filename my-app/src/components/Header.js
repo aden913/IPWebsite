@@ -59,7 +59,7 @@ function Header() {
       <header id="logo">
         <div id="logoDiv">
           <div id="charactersLogo">
-            <span id="logoColon">:</span>}
+            <span id="logoColon">:</span>{'}'}
           </div>
           <div id="wordsLogo">
             <strong>INQUISITIVE</strong>
