@@ -3,3 +3,17 @@
     src: url("../../images/fonts/Jura-VariableFont_wght.ttf");
     font-weight: bold;
   }
+  @font-face {
+    font-family: "Choc";
+    src: url("../../images/fonts/TTChocolates-Regular.otf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "NewAm";
+    src: url("../../images/fonts/New_Amsterdam/NewAmsterdam-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Open";
+    src: url("../../images/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+    font-weight: bold;
+  }

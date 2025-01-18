@@ -6,7 +6,7 @@ const PoemDisplay = ({ title, content }) => {
   const formattedContent = addDoubleSpaces(content);
 
   return (
-    <div style={styles.poemContainer}>
+    <div className='poemContainer' style={styles.poemContainer}>
       <h2 style={styles.title} className='ProjectNames'>{title}</h2>
       <div className='ProjectText'>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>

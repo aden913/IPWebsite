@@ -8,12 +8,13 @@ import app2Play from '../images/app2Play.jpg';
 import app2Add from '../images/app2Add.jpg';
 function Apps() {
   return (
-    <div>
+   
      
    <div className='AlignCenter'>
+
    <li className="ProjectNames">Question Quest</li>
    <p className="ProjectText">This app is intended to be a cross between trivia crack and quizlet. We intended for users to be able to create trivia and send them to people so that they may play them. The uses could be simple entertainment or even for teachers to send out a quiz to there students to study.</p>
-   </div>
+  
 
 <div id="arranger">
    <div id='codeBlock'>
@@ -36,13 +37,14 @@ function Apps() {
    </div>
 
 
-   <div id="appDiv">
+   
    <li className="ProjectNames">Unmatched Helper</li>
    
    <p className="ProjectText">This app is meant to assist in playing a board game known as unmatched. It will assist in tracking your health as well as some characters passive abilities. It also contains a function to help decide random 2 on 2 teams.</p>
-   </div>
+   
 
    <div id="arranger">
+    
    <div id='codeBlock'>
    <Collapsible trigger="Login Page">
    <img id="projectImage" src={app2Main} alt='an app' className='bigPicture'></img>

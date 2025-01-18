@@ -17,6 +17,63 @@
 legend{text-align: center;}
 
 
+
+
+
+#headerButtonBox {
+  display: flex;
+  justify-content: flex-end; /* Align everything to the right */
+  align-items: center;
+ 
+
+}
+
+#slideButtons {
+  display: flex;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute; /* Make it absolute so it aligns to the right */
+  right: 0; /* Keep the buttons flush with the right edge */
+  z-index: 0; /* Ensure buttons are behind the toggle button */
+}
+
+#slideButtons.hidden {
+  opacity: 0;
+  transform: translateX(100%); /* Slide out to the right */
+  pointer-events: none; /* Disable interaction */
+}
+
+#slideButtons.visible {
+  opacity: 1;
+  transform: translateX(0); /* Slide in from the right */
+}
+
+.toggleButtonBox {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  position: absolute; /* Absolute positioning to make it stay in place */
+  right: 0; /* Keep it flush with the right edge */
+  z-index: 1; /* Make sure it stays above the other buttons */
+}
+
+.toggleButtonBox img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
 #arranger{
   display: flex;
   justify-content: center;
@@ -44,7 +101,11 @@ body{
   text-align: center;
 }
 
-
+#headerButtonBox{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-basis: 2vw;
+}
 #navbar {
   position:fixed;
   top:0;
@@ -95,5 +156,22 @@ li {
 #navbar {
   display: none;
 }
+#logoDiv {margin-top: 0;}
 
+#headerButtonBox{
+  position:absolute;
+  right:0;
+}
+
+/*REACT POEMS MOBILE CSS*/
+.poemContainer{
+  width:100%;
+  padding:0 !important;
+  margin:0 !important;
+  padding-bottom: 1vw !important;
+  padding-top: 1vw !important;
+  max-width: none !important;
+}
+
+/*END REACT POEMS MOBILE CSS*/
 }

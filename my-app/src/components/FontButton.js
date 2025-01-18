@@ -36,10 +36,12 @@ function FontSizeSelector() {
       >
          <ToggleButton value="smallFont" aria-label="Small Font">
           <span
+          className='fontButtonCircle'
+          id='fontCircleA'
             style={{
               display: 'inline-block',
-              width: '10px',
-              height: '10px',
+              width: '.5em',
+              height: '.5em',
               borderRadius: '50%',
               backgroundColor: '#02c8f0',
               
@@ -48,10 +50,12 @@ function FontSizeSelector() {
         </ToggleButton>
         <ToggleButton value="mediumFont" aria-label="Medium Font">
           <span
+          className='fontButtonCircle'
+          id='fontCircleB'
             style={{
               display: 'inline-block',
-              width: '13px',
-              height: '13px',
+              width: '.70em',
+              height: '.70em',
               borderRadius: '50%',
               backgroundColor: '#02c8f0',
             }}
@@ -59,10 +63,12 @@ function FontSizeSelector() {
         </ToggleButton>
         <ToggleButton value="largeFont" aria-label="Large Font">
           <span
+          className='fontButtonCircle'
+id='fontCircleC'
             style={{
               display: 'inline-block',
-              width: '16px',
-              height: '16px',
+              width: '.9em',
+              height: '.9em',
               borderRadius: '50%',
               backgroundColor: '#02c8f0',
             }}

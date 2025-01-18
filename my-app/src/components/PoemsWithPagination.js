@@ -56,6 +56,7 @@ const PoemsWithPagination = () => {
       {/* Button to show all poems */}
       <div style={{ textAlign: 'center', marginBottom: '20px' }}>
         <button
+          id="showPoemsButton"
           onClick={() => setShowPoemList(!showPoemList)}
           style={{
             padding: '10px 20px',
@@ -75,6 +76,7 @@ const PoemsWithPagination = () => {
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             {listPoems.map((poem) => (
               <li
+                className='poemList'
                 key={poem.id}
                 onClick={() => handlePoemClick(poem)}
                 style={{

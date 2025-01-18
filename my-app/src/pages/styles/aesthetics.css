@@ -1,3 +1,131 @@
+/* Dark mode colors:
+#030637 -- header background - plain text - highlight
+#3C0753
+#720455
+#910A67 -- emphasized text - highlight text
+Light mode colors:
+#01133f
+#02c8f07b
+#02c8f0
+#021442
+*/
+
+/* DarkModeToggle.css */
+#moon-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  color:white;
+}
+.dark-mode-toggle{
+  background-color: #01133f;
+}
+
+button:active #moon-icon {
+  transform: scale(0.9); /* Adds a slight press effect */
+}
+
+html[data-theme="dark"] {
+  background-color: #030637;
+ 
+}
+
+html[data-theme="dark"] .hamburger{
+color:#910A67;
+background-color: #3C0753; 
+border-color: #3C0753;
+}
+
+html[data-theme="dark"] #arrowSVG {
+  stroke: #910A67 !important;
+ 
+}
+
+html[data-theme="dark"] .ProjectText {
+   color: #3C0753;
+}
+html[data-theme="dark"] #logo {
+  background-color: #030637;
+}
+
+html[data-theme="dark"] .ProjectNames {
+  color: #720455;
+}
+html[data-theme="dark"] #wordsLogo {
+  color: #3C0753;
+}
+html[data-theme="dark"] #charactersLogo {
+  color: #910A67;
+}
+
+html[data-theme="dark"] li:hover {
+  background-image: linear-gradient(rgba(131, 3, 3, 0.263), rgba(49, 2, 2, 0.08));
+}
+html[data-theme="dark"] nav a {
+  color:#910A67;
+}
+html[data-theme="dark"] #navbar {
+  background-color: #030637;
+}
+html[data-theme="dark"] .webLinks {
+  color:#910A67;
+  background-color:#3C0753;
+}
+html[data-theme="dark"] legend {
+  color: #3C0753;
+}
+
+html[data-theme="dark"] fieldset {
+  border-color: #3C0753;
+}
+html[data-theme="dark"] #points {
+  color: #3C0753;
+}
+
+/* POEMS DARK MODE */
+html[data-theme="dark"] .dAZYal {
+  background-color: #3C0753;
+  color:#910A67;
+  border-color:#720455;
+}
+html[data-theme="dark"] #showPoemsButton {
+  background-color: #3C0753 !important;
+  color:#910A67;
+  border-color: #910A67 !important;
+}
+html[data-theme="dark"]  .poemList{
+  background-color: #3C0753 !important;
+  color:#910A67;
+  border-color: #910A67 !important;
+}
+html[data-theme="dark"] .poemContainer {
+  background-color: #2601194e !important;
+  color:#910A67 !important;
+}
+html[data-theme="dark"] .poemContainer h2 {
+  color:#910A67 !important;
+}
+html[data-theme="dark"] h1 {
+  color:#910A67
+}
+/*END POEMS DARK MODE*/
+html[data-theme="dark"] .css-1qb8o-MuiToggleButtonGroup-root{
+  background-color: #3C0753 !important;
+  
+}
+html[data-theme="dark"] .fontButtonCircle {
+  background-color:#910A67 !important;
+}
+
+html[data-theme="dark"] .dark-mode-toggle {
+  background-color: #3C0753;
+  border-color: #910A67 ;
+
+}
+
+
+
+
 
 body[data-font-size="smallFont"] .ProjectText {
   font-size: 1.5vw;
@@ -24,15 +152,41 @@ body[data-font-size="largeFont"] .ProjectNames {
   font-size: 4.5vw;
 }
 
-#resumeText{
-    text-align: center;
-    font-size: 2vw;
+
+#logoDiv {
+  margin-top: 3vw;
+  font-family: 'NewAm';
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3vw;
+}
+#charactersLogo {
+  color: #02c8f0;
+  font-size: 5vw;
+  font-weight: 900;
+}
+#logoColon {
+  font-family:'Open';
+  display:inline;
+  font-size:5vw;
+  margin-right: 4px;
+}
+#wordsLogo {
+  color: white;
+  margin-top: 1%;
+  margin-left: .7vw;
+  font-size: 2vw;
+  line-height: 1.8vw;
+  letter-spacing: .3vw;
+  text-align: left;
 }
 
 #highlight{
      font-size: 2.6vw;
 }
-#resumeLink{
+/* #resumeLink{
   padding:0;
 }
 #resumeLink:link{
@@ -46,7 +200,7 @@ body[data-font-size="largeFont"] .ProjectNames {
 }
 #resumeLink:active{
   color: #02c8f0;
-}
+} */
 
 ::selection {
   background: #021442;
@@ -248,4 +402,83 @@ h3 { font-size: 3vw; }
 #resumeText{ font-size: 3vw;}
 #highlight{font-size: 3.6vw;}
 
+/*Logo Mobile sytles*/
+#logoDiv {
+  margin-top: 3vw;
+}
+#charactersLogo {
+  font-size: 8vw;
+}
+#logoColon {
+  font-family:'Open';
+  display:inline;
+  font-size:8vw;
+  margin-right: 4px;
+}
+#wordsLogo {
+  font-size: 5vw;
+  line-height: 4.7vw;
+  letter-spacing: .5vw;
+}
+/*End Logo Mobile sytles*/
+
+body[data-font-size="smallFont"] .ProjectText {
+  font-size: 3vw;
+}
+
+body[data-font-size="mediumFont"] .ProjectText {
+  font-size: 3.5vw;
+}
+
+body[data-font-size="largeFont"] .ProjectText {
+  font-size: 4vw;
+}
+
+
+body[data-font-size="smallFont"] .ProjectNames {
+ font-size: 4.5vw;
+}
+
+body[data-font-size="mediumFont"] .ProjectNames {
+  font-size: 5vw;
+}
+
+body[data-font-size="largeFont"] .ProjectNames {
+  font-size: 5.5vw;
+}
+
+
+
+#fontCircleA{
+  width: 5px !important;
+  height: 5px !important;
+}
+#fontCircleB{
+  width: 7px !important;
+  height: 7px !important;
+}
+#fontCircleC{
+  width: 9px !important;
+  height: 9px !important;
+}
+.css-gn0oko-MuiButtonBase-root-MuiToggleButton-root{
+    padding:5px !important;
+}
+
+#slideButtons.visible{align-items: center; }
+
+#slideButtons.visible + .toggleButtonBox {
+  transform: translateX(-185%); /* Move the toggle button to the right to replace the buttons */
+}
+.toggleButtonBox img {width:23px; height: 23px;}
+.dark-mode-toggle{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 4vw;
+  height: 4.4vw;
+}
+#moon-icon{
+  width:10px;
+}
 }
