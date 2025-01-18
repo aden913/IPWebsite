@@ -18,7 +18,7 @@ import Header from './components/Header';
 //SubPages
 import Poems from './pages/PoemsReact/Poems';
 import Art from './pages/artReact/Art';
-import Three from './pages/Three';
+import Three from './pages/Three.js';
 
 //stylesheets
 import './pages/styles/font.css';
