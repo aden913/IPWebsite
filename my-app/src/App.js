@@ -18,7 +18,7 @@ import Header from './components/Header';
 //SubPages
 import Poems from './pages/PoemsReact/Poems';
 import Art from './pages/artReact/Art';
-import three from './pages/three';
+import Three from './pages/Three';
 
 //stylesheets
 import './pages/styles/font.css';
@@ -47,7 +47,7 @@ function App() {
 
       <Route path="/Poems" element={<Poems />} />
       <Route path="/Art" element={<Art />} />
-      <Route path="/three" element={<three />} />
+      <Route path="/Three" element={<Three />} />
     </Routes>
   </Router>
 
