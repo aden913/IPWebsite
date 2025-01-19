@@ -9,6 +9,7 @@ Light mode colors:
 #02c8f0
 #021442
 */
+ 
 
 /* DarkModeToggle.css */
 #moon-icon {
@@ -36,10 +37,15 @@ background-color: #3C0753;
 border-color: #3C0753;
 }
 
-html[data-theme="dark"] #arrowSVG {
+html[data-theme="dark"] #settings {
   stroke: #910A67 !important;
  
 }
+
+html[data-theme="dark"] .toggleButtonBox{
+  background-color: #3C0753 !important;
+}
+
 
 html[data-theme="dark"] .ProjectText {
    color: #3C0753;
@@ -186,21 +192,6 @@ body[data-font-size="largeFont"] .ProjectNames {
 #highlight{
      font-size: 2.6vw;
 }
-/* #resumeLink{
-  padding:0;
-}
-#resumeLink:link{
-  color: #01133f;
-}
-#resumeLink:visited{
-  color: #01133f;
-}
-#resumeLink:hover{
-  color: #02c8f07b;
-}
-#resumeLink:active{
-  color: #02c8f0;
-} */
 
 ::selection {
   background: #021442;
@@ -405,6 +396,8 @@ h3 { font-size: 3vw; }
 /*Logo Mobile sytles*/
 #logoDiv {
   margin-top: 3vw;
+  padding-bottom: 9vw;
+  padding-top:5vw;
 }
 #charactersLogo {
   font-size: 8vw;
@@ -448,7 +441,10 @@ body[data-font-size="largeFont"] .ProjectNames {
 }
 
 
-
+#settings{
+  width: 15px;
+  height: 15px;
+}
 #fontCircleA{
   width: 5px !important;
   height: 5px !important;

@@ -24,8 +24,8 @@ legend{text-align: center;}
   display: flex;
   justify-content: flex-end; /* Align everything to the right */
   align-items: center;
- 
-
+  flex-direction: row-reverse;
+  
 }
 
 #slideButtons {
@@ -48,21 +48,18 @@ legend{text-align: center;}
 }
 
 .toggleButtonBox {
-  background: none;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  position: absolute; /* Absolute positioning to make it stay in place */
+  position:absolute;
+  top:17%;
   right: 0; /* Keep it flush with the right edge */
   z-index: 1; /* Make sure it stays above the other buttons */
+  background-color: #01133f;
 }
 
-.toggleButtonBox img {
-  width: 30px;
-  height: 30px;
-}
 
 
 
@@ -95,17 +92,12 @@ body{
 
  
 #logo {
-  width:100vw;
+  width:100%;
   background-color: #01133f;
   margin: 0 auto;
   text-align: center;
 }
 
-#headerButtonBox{
-  display: flex;
-  flex-direction: row-reverse;
-  flex-basis: 2vw;
-}
 #navbar {
   position:fixed;
   top:0;
@@ -135,6 +127,14 @@ li {
 
   margin-right: 1vw;
 }
+
+#slideButtons.visible + .toggleButtonBox {
+  transform: translateX(-365%); /* Move the toggle button to the right to replace the buttons */
+}
+
+
+
+
 
 @media only screen and (max-width: 767px) {
 
@@ -175,4 +175,9 @@ li {
 }
 
 /*END REACT POEMS MOBILE CSS*/
+
+.toggleButtonBox {
+top:6.3%;
+border-radius: 25%;
+}
 }
