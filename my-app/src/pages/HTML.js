@@ -13,18 +13,22 @@ function HTML() {
      <a href="webpages/html/CoxCh13/index.html" className='webLinks'>Fourth Webpage</a>
      <a href="webpages/html/CoxCh13CGIP/index.html" className='webLinks'>Fifth Webpage</a>
     <br></br>
-    <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
+    {/* <a href="http://rwd-examples.inquisitiveprogramming.com/Bootstrap_Demo/index.html" className='webLinks'>Bootstrap Example</a>
     <a href="http://rwd-examples.inquisitiveprogramming.com/ch9/CoxAdenCh9/index.html" className='webLinks'>Responsive Design Example</a>
-    </fieldset>
+     */}</fieldset>
     </div>
 
   <br></br>
+  <fieldset id='arranger'>
+    <legend>Post School Websites</legend>
   {/* This is the poems website for summit */}
   <a href="webpages/html/Poems/index.html" className='webLinks'>My Poems!</a>
+  <p className='ProjectText'>See a more updated version in the React tab!</p>
   <a href="webpages/html/SummitsPoems/index.html" className='webLinks'>Summit's Poems</a>
-
+  <a href="baking.inquisitiveprogramming.com" className='webLinks'>Baking Site</a>
+  <p className='ProjectText'>This website was created to serve as an ecommerce platform to raise money for a missions trip through baked goods!</p>
   <a href="MeganAlmon.com" className='webLinks'>MeganAlmon.com</a>
-
+</fieldset>
 
   <li className="ProjectText">
     I have a strong foundation in html design. I find it interesting and fun to learn more concepts surrounding web design with a foundation of html. 
