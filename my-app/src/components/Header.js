@@ -39,6 +39,7 @@ function Header() {
   return (
     <div>
   <header id="logo">
+
     <div id="logoDiv">
       <div id="charactersLogo">
         <span id="logoColon">:</span>{'}'}
@@ -48,7 +49,9 @@ function Header() {
         <br />
         PROGRAMMING
       </div>
+    </div>
 
+    <div id="buttonDiv">
       <button className="hamburger" onClick={toggleMobileNav}>
         &#9776; {/* Hamburger icon */}
       </button>
@@ -65,6 +68,7 @@ function Header() {
         {settingsIcon}
       </button>
     </div>
+
   </header>
 
   <nav>

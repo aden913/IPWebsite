@@ -18,7 +18,12 @@ legend{text-align: center;}
 
 
 
-
+#buttonDiv{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
 
 #headerButtonBox {
   display: flex;
@@ -31,7 +36,7 @@ legend{text-align: center;}
 #slideButtons {
   display: flex;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  position: absolute; /* Make it absolute so it aligns to the right */
+  /*position: absolute;  Make it absolute so it aligns to the right */
   right: 0; /* Keep the buttons flush with the right edge */
   z-index: 0; /* Ensure buttons are behind the toggle button */
 }
@@ -53,9 +58,10 @@ legend{text-align: center;}
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  position:absolute;
+  margin:1vw;
+  /*position:absolute;
   top:17%;
-  right: 0; /* Keep it flush with the right edge */
+  right: 0;  Keep it flush with the right edge */
   z-index: 1; /* Make sure it stays above the other buttons */
   background-color: #01133f;
 }
@@ -96,6 +102,8 @@ body{
   background-color: #01133f;
   margin: 0 auto;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #navbar {
@@ -156,7 +164,7 @@ li {
 #navbar {
   display: none;
 }
-#logoDiv {margin-top: 0;}
+#logoDiv {margin-top: 0; margin-bottom: 3vw;}
 
 #headerButtonBox{
   position:absolute;
